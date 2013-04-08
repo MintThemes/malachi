@@ -14,7 +14,7 @@
 			'plugin_required' => true,
 			'plugin_download_link' => 'http://moveplugins.com/repo/mp-core/?download=true'
 		);
-		$mp_core_theme_updater = new MP_CORE_Software_Checker($args);
+		$mp_core_theme_updater = new MP_CORE_Plugin_Checker($args);
 	}
  }
 add_action( 'init', 'mp_core_plugin_check' );

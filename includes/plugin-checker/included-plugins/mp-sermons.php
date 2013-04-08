@@ -14,7 +14,7 @@
 			'plugin_required' => false,
 			'plugin_download_link' => 'http://moveplugins.com/repo/mp-sermons/?download=true'
 		);
-		$sermon_manager_plugin_check = new MP_CORE_Software_Checker($args);
+		$sermon_manager_plugin_check = new MP_CORE_Plugin_Checker($args);
 	}
  }
 add_action( 'init', 'sermon_manager_plugin_check' );
