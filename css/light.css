@@ -1,0 +1,27 @@
+.container-top{background:url(images-light/bg-container.gif) repeat-x;}
+.container{background:none; !important}
+.btn-prev,
+.btn-next{
+	width:54px;
+	height:56px;
+	overflow:hidden;
+	text-indent:-9999px;
+	position:absolute;
+	left:-74px;
+	top:287px;
+	background:url(images-light/btn-prev.gif) no-repeat;
+	z-index:100;
+}
+.btn-next{
+	background:url(images-light/btn-next.gif) no-repeat;
+	left:1011px;
+}
+#nav li a{
+	display:block;
+	width:105px;
+	height:36px;
+	overflow:hidden;
+	color:#fff;
+	background:url(images-light/bg-nav.png) no-repeat;
+	padding-top:8px;
+}
