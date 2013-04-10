@@ -9,8 +9,7 @@
 			'software_type' => 'theme', 
 			'software_name' => 'Malachi Theme', 
 			'software_slug' => 'malachi',
-			'software_option_tab' => 'mt_malachi_settings_updates',
-			'software_license_key' => mp_core_get_option( 'mt_malachi_settings_updates',  'edd_licence_key' ),
+			'software_licence_option_tab' => 'mt_malachi_settings_updates',
 			'software_page_url' => 'http://mintthemes.com/themes/malachi',
 			'software_api_url' => 'http://staging.mintthemes.com/',
 			'software_author' => 'Move Plugins'
