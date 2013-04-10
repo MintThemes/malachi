@@ -9,11 +9,13 @@
 			'software_type' => 'theme', 
 			'software_name' => 'Malachi Theme', 
 			'software_slug' => 'malachi',
+			'software_option_tab' => 'mt_malachi_settings_updates',
+			'software_license_key' => mp_core_get_option( 'mt_malachi_settings_updates',  'edd_licence_key' ),
 			'software_page_url' => 'http://mintthemes.com/themes/malachi',
-			'software_version_url' => 'http://moveplugins.com/repo/mt-malachi/?version=true',
-			'software_download_url' => 'http://moveplugins.com/repo/mp-core/?download=true'
+			'software_api_url' => 'http://staging.mintthemes.com/',
+			'software_author' => 'Move Plugins'
 		);
-		$mt_malachi_theme_updater = new MP_CORE_Updater($args);
+		$mt_malachi_theme_updater = new MP_CORE_Theme_Updater($args);
 	}
  }
 add_action( 'init', 'mt_malachi_software_check' );
