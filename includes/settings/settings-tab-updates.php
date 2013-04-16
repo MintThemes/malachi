@@ -29,22 +29,38 @@ function mt_malachi_settings_updates_create(){
 	
 	add_settings_section(
 		'updates_settings',
-		__( 'General Settings', 'mt_malachi' ),
+		__( 'Automatic Updates', 'mt_malachi' ),
 		'__return_false',
 		'mt_malachi_settings_updates'
 	);
 	
 	add_settings_field(
-		'edd_licence_key',
+		'license_key',
 		__( 'Licence Key', 'mt_malachi' ), 
 		'mp_core_textbox',
 		'mt_malachi_settings_updates',
 		'updates_settings',
 		array(
-			'name'        => 'edd_licence_key',
-			'value'       => mp_core_get_option( 'mt_malachi_settings_updates',  'edd_licence_key' ),
+			'name'        => 'license_key',
+			'value'       => mp_core_get_option( 'mt_malachi_settings_updates',  'license_key' ),
 			'description' => __( 'Enter your License Key to enable automatic updates for this theme', 'mt_malachi' ),
 			'registration'=> 'mt_malachi_settings_updates',
+		)
+	);
+	
+	//This needs to match the slug name in the MP_CORE_Theme_Updater creation file
+	$software_slug = 'malachi'; 
+	
+	add_settings_field(
+		'license_key_light',
+		__( 'Key Active', 'mt_malachi' ), 
+		'mp_core_true_false_light',
+		'mt_malachi_settings_updates',
+		'updates_settings',
+		array(
+			'name'        => 'license_key_light',
+			'value'       => get_option( $software_slug . '_license_status_valid' ),
+			'description' => get_option( $software_slug . '_license_status_valid' ) == true ? __( 'This licence is active.', 'mt_malachi' ) : __( 'This license is not active! Automatic updates are not enabled.', 'mt_malachi' ),
 		)
 	);
 	
