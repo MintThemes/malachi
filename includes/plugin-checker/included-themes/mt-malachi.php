@@ -11,7 +11,8 @@
 			'software_license_setting' => 'mt_malachi_settings_updates',//<- the slug of the setting group containing the license. The sub item must be called 'license_key'
 			'software_page_url' => 'http://mintthemes.com/themes/malachi',//<- The link a user will see when they click "View Details"
 			'software_api_url' => 'http://staging.mintthemes.com/',//The URL where EDD and mp_repo are installed and checked
-			'software_envato_api_url' => 'http://marketplace.envato.com/api/edge/mintthemes/w1vss9x62z5vkf08bzn5rkhwtxg7kji2/verify-purchase:',//<-Your Envato API URL
+			'software_envato_username' => 'mintthemes',//<-Your Envato API Username
+			'software_envato_api_key' => 'w1vss9x62z5vkf08bzn5rkhwtxg7kji2',//<-Your Envato API Key
 			'software_author' => 'Move Plugins'//<- Author of this software
 		);
 		
