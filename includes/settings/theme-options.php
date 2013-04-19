@@ -28,8 +28,5 @@ function mt_malachi_settings(){
 	//Include other option tabs
 	include_once( 'settings-tab-general.php' );
 	
-	//Include updates option tabs
-	include_once( 'settings-tab-updates.php' );
-	
 }
 add_action('after_setup_theme', 'mt_malachi_settings');
