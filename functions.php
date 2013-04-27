@@ -88,7 +88,7 @@ else{
 	/**
 	 * Check Malachi Theme for updates
 	 */
-	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/included-themes/mt-malachi.php' );
+	require( MT_MALACHI_THEME_DIR . '/includes/updater/mt-malachi-update.php' );
 	
 	/**
 	 * Check if mp_sermons is installed
