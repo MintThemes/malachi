@@ -12,7 +12,7 @@
 			'plugin_subdirectory' => 'mp_core/', 
 			'plugin_filename' => 'mp_core.php',
 			'plugin_required' => true,
-			'plugin_download_link' => 'http://moveplugins.com/repo/mp-core/?download=true'
+			'plugin_download_link' => 'http://moveplugins.com/repo/move-plugins-core/?download=true'
 		);
 		$mp_core_theme_updater = new MP_CORE_Plugin_Checker($args);
 	}
