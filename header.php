@@ -29,7 +29,7 @@
 		
         <?php 
 		//Show the map		
-        echo '<strong class="map"><a href="' . get_theme_mod('mt_malachi_top_bar_map_url') . '">Map &amp; Directions</a></strong>';
+        echo '<strong class="map"><a href="' . get_theme_mod('mt_malachi_top_bar_map_url') . '">' . __('Map &amp; Directions', 'mt_malachi') . '</a></strong>';
 		
 		
 		//Show the times
@@ -45,7 +45,7 @@
     
                     <input type="text" class="text" name="s" id="s"/>
     
-                    <input class="btn-search" type="submit" value="Search" />
+                    <input class="btn-search" type="submit" value="<?php __('Search', 'mt_malachi'); ?>" />
     
                 </fieldset>
     
@@ -65,7 +65,7 @@
 
 					<div class="holder">
 
-                    <strong class="logo"><?php mp_core_logo_image(); ?></strong>
+                    <strong class="logo"><?php function_exists( 'mp_core_logo_image' ) ? mp_core_logo_image() : ''; ?></strong>
 
 					<ul id="nav">
                     <?php

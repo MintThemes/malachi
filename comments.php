@@ -11,5 +11,8 @@
  * @subpackage Malachi
  * @since Malachi 3.0
  */
- mp_core_comments_template();
+
+//Call the mp_core_comments_template function if it exists
+function_exists ( 'mp_core_comments_template' ) ? mp_core_comments_template() : NULL;
+
 ?>

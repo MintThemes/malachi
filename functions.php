@@ -136,9 +136,9 @@ else{
 	require( MT_MALACHI_THEME_DIR . '/includes/misc-functions/enqueue-scripts.php' );
 	
 	/**
-	 * Include Theme Options
+	 * Include Responsive Options
 	 */
-	require( MT_MALACHI_THEME_DIR . '/includes/settings/theme-options.php' );
+	require( MT_MALACHI_THEME_DIR . '/includes/settings/responsive-options.php' );
 	
 	/**
 	 * Include Homepage Sermon Widget

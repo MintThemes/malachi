@@ -18,6 +18,12 @@ if ( ! function_exists( 'malachi_scripts' ) ):
 		}
 		
 		wp_enqueue_script( 'jquery' );
+		
+		//Responsive CSS - load if the user hasn't disabled it
+		$responsive_check = mp_core_get_option( 'mt_malachi_responsive_settings_general',  'responsive_check' );
+		if ( empty( $responsive_check ) ){
+			wp_enqueue_style( 'mt_responsive', get_template_directory_uri() . '/css/responsive.css' );
+		}
 	}
 endif; //malachi_scripts
 add_action( 'wp_enqueue_scripts', 'malachi_scripts' );

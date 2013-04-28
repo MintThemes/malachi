@@ -70,8 +70,7 @@ select:focus{outline:none;}
 .container-top{padding-top:27px;}
 /* wrapper start */
 #wrapper{
-	max-width:992px;
-	width:100%;
+	width:992px;
 	margin:0 auto;
 }
 #header{
@@ -243,7 +242,7 @@ select:focus{outline:none;}
 #nav li ul ul li:last-child a{border:0 !important;}
 /* header end */
 /* main start */
-#main{padding-bottom:23px; clear:both;}
+#main{padding-bottom:23px; clear:both; display:inline-block; width:100%;}
 .visual{
 	position:relative;
 	padding-bottom:16px;
@@ -942,9 +941,8 @@ textarea{
 /* content end */
 /* sidebar start */
 #sidebar{
-	width:319px;
+	width:320px;
 	float:right;
-	margin-top:20px;
 }
 #sidebar .top{
 	overflow:hidden;
@@ -993,7 +991,6 @@ textarea{
 	margin:10px 0 0 10px;
 }
 #sidebar .title{
-	background:url(css/images/bg-title2.gif) repeat-x 0 100%;
 	padding-bottom:12px;
 }
 #sidebar .title h3{
@@ -1001,7 +998,6 @@ textarea{
 	font:17px/20px; font-family: 'Droid Sans', sans-serif; font-weight: 400;
 	z-index:0;
 }
-.sidebar-item{padding:0 8px 18px 12px;}
 .photo-gallery{padding:0 8px 18px 12px;}
 .photo-gallery ul{
 	margin:0 0 0 -9px;
@@ -1192,9 +1188,53 @@ iframe{
 	background:url(css/images/social-03.png) no-repeat;
 }
 
+/* Home Page Widget */
 .homepage-widget .title{
-	display:none;
+	padding: 9px 0px 0px 9px;
 }
+.homepage-widget{
+	padding:9px;
+	margin-bottom:17px;
+	background-color: #FFF;
+    border: 7px solid rgba(141, 141, 141, 0.18);
+	border-radius: 4px;
+	-webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	background-image: url(css/images/bg-border.png);
+}
+.homepage-widget .homepage-widget-inner{
+	background-color:#FFF;	
+}
+.homepage-widget .homepage-widget-inner > ul{
+	margin:0px 0px 0px 19px;;
+	padding:0px 9px 9px 9px;
+}
+.homepage-widget .homepage-widget-inner > form {
+	padding:0px 9px 9px 9px;
+}
+
+/* Page Content */
+#content, #sidebar .sidebar-item{
+	padding:9px;
+	margin-bottom:17px;
+	background-color: #FFF;
+    border: 7px solid rgba(141, 141, 141, 0.18);
+	border-radius: 4px;
+	-webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	background-image: url(css/images/bg-border.png);
+}
+
+#content .content-inner, #sidebar .sidebar-item .sidebar-item-inner{
+	background-color:#FFF;	
+}
+
+/* Sidebar */
+
+#sidebar .title, #sidebar .textwidget{
+	padding:9px;	
+}
+
 .button, input[type="submit"]{
 	font-family: 'Droid Sans', sans-serif;
 	font-weight: 700;
