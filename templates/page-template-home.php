@@ -1,11 +1,8 @@
 <?php
 /**
- * The Home Page template file.
- *
- * @package WordPress
- * @subpackage Malachi
- * @since Malachi 3.0
+ * Template Name: Home
  */
+
 
 get_header(); ?>
 
