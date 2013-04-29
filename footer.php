@@ -37,8 +37,7 @@
                             ?>
 						</ul>
 
-						<p>Copyright &copy; 2011 <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>. All rights reserved. <?php if (get_option('cap_privacypolicy') != ""){ ?><a href="<?php echo get_option('cap_privacypolicy'); ?>">Privacy Policy</a><?php } ?>  <?php if (get_option('cap_privacypolicy') != ""){ ?>/ <a href="<?php echo get_option('cap_sitemap');  ?>">Site Map</a><?php } ?></p>
-
+						<p><?php echo __('Copyright', 'mt_malachi'); ?> &copy; <?php echo date('Y') . ' ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '. ' . __('All rights reserved.', 'mt_malachi'); ?> 
 					</div>
 
 				</div><!-- footer end -->

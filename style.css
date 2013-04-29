@@ -429,7 +429,6 @@ select:focus{outline:none;}
 	padding-bottom:20px;
 }
 #content{
-	width:630px;
 	float:left;
 }
 #content .title{
