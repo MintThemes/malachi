@@ -14,7 +14,16 @@
 /**
 * Create new tab
 */
-$mt_malachi_responsive_settings->mp_core_new_tab(__('Malachi Responsive Settings' , 'my_plugin'), 'general');
+function mt_malachi_responsive_settings_general_new_tab( $active_tab ){
+	
+	//Create array containing the title and slug for this new tab
+	$tab_info = array( 'title' => __('Malachi Responsive Settings' , 'mt_malachi'), 'slug' => 'general' );
+	
+	global $mt_malachi_responsive_settings; $mt_malachi_responsive_settings->new_tab( $active_tab, $tab_info );
+		
+}
+//Hook into the new tab hook filter contained in the settings class in the Move Plugins Core
+add_action('mt_malachi_responsive_settings_new_tab_hook', 'mt_malachi_responsive_settings_general_new_tab');
 
 /**
 * Create the options for this tab
