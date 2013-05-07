@@ -1,8 +1,8 @@
 Malachi Theme for WordPress
 Theme Name: Malachi Theme
 Created: Sept 14, 2011
-By: Adam Pickering, Phil Johnston
-Contact Info: Visit churchthemer.com
+By: Mint Themes
+Contact Info: Visit mintthemes.com
 
 ----------------------------------------------------------------------------------------------------------
 

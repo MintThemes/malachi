@@ -8,28 +8,37 @@
  */
 
 get_header(); ?>
-			
-            
-            
-            <div id="main">
-					<div class="main-container">
-						<div class="box-t"></div>
-						<div class="box-holder">
-							<div id="content">
-								<div class="title">
-									<h2>Page not found.</h2>
-								</div>
-								
-								 <div class="article">Oops! That page wasn't found.</div>
-							</div><!-- content end -->
-                            
 
+<div id="main">
+<div id="main-inner">
 
-					<?php get_sidebar(); ?>
-                    
+           
+            
+			<div id="content">
+            
+            <div class="content-inner">
+               
+                    <div class="title">
+                        <h2><?php echo __( 'Nothing Found. 404.', 'mt_malachi' ); ?></h2>
                     </div>
-						<div class="box-b"></div>
-					</div>
-				</div><!-- main end -->
-                               
-                    <?php get_footer(); ?>
+                    
+                    <div class="blog-post">
+                    
+                        <div class="text">
+                            
+                           <p><?php echo __( 'Nothing Found. 404.', 'mt_malachi' ); ?></p>
+                            
+                        </div>
+                    
+                    </div><!-- blog-post end -->               
+                
+            </div>
+			</div><!-- content end -->
+            
+            
+		
+			<?php get_sidebar(); ?>
+</div>
+</div><!-- main end -->
+
+<?php get_footer(); ?>

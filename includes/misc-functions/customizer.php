@@ -26,6 +26,15 @@ function mt_malachi_customizer(){
 					'jquery_function_name' => 'css',
 					'arg' => 'display'
 				),
+				'mt_malachi_top_bar_text_color' => array(
+					'label'      => __( 'Text Color', 'mp_core' ),
+					'type'       => 'color',
+					'default'    => '',
+					'priority'   => 10,
+					'element'    => '#top, #top a',
+					'jquery_function_name' => 'css',
+					'arg' => 'color'
+				),
 				'mt_malachi_top_bar_bg_image' => array(
 					'label'      => __( 'Background Image', 'mp_core' ),
 					'type'       => 'image',
@@ -71,15 +80,6 @@ function mt_malachi_customizer(){
 					'jquery_function_name' => 'css',
 					'arg' => 'display'
 				),
-				'mt_malachi_top_bar_map_text_color' => array(
-					'label'      => __( 'Map Text Color', 'mp_core' ),
-					'type'       => 'color',
-					'default'    => '#000000',
-					'priority'   => 4,
-					'element'    => '.top .map a',
-					'jquery_function_name' => 'css',
-					'arg' => 'color'
-				),
 				'mt_malachi_top_bar_times' => array(
 					'label'      => __( 'Meeting Times', 'mp_core' ),
 					'type'       => 'text',
@@ -97,21 +97,30 @@ function mt_malachi_customizer(){
 					'element'    => '#top .time',
 					'jquery_function_name' => 'css',
 					'arg' => 'display'
-				),
-				'mt_malachi_top_bar_map_times_color' => array(
-					'label'      => __( 'Times Text Color', 'mp_core' ),
-					'type'       => 'color',
+				),				
+				'mt_malachi_top_bar_phone' => array(
+					'label'      => __( 'Phone Number', 'mp_core' ),
+					'type'       => 'text',
 					'default'    => '',
-					'priority'   => 10,
-					'element'    => '.top .time',
-					'jquery_function_name' => 'css',
-					'arg' => 'color'
+					'priority'   => 8,
+					'element'    => '.mt-malachi-icon-phone',
+					'jquery_function_name' => 'html',
+					'arg' => NULL,
 				),
+				'mt_malachi_top_bar_display_phone' => array(
+					'label'      => __( 'Display Phone Number?', 'mp_core' ),
+					'type'       => 'checkbox',
+					'default'    => '',
+					'priority'   => 9,
+					'element'    => '.mt-malachi-icon-phone',
+					'jquery_function_name' => 'css',
+					'arg' => 'display'
+				),			
 				'mt_malachi_top_bar_display_search' => array(
 					'label'      => __( 'Display Search?', 'mp_core' ),
 					'type'       => 'checkbox',
 					'default'    => '',
-					'priority'   => 6,
+					'priority'   => 11,
 					'element'    => '#top .form-search',
 					'jquery_function_name' => 'css',
 					'arg' => 'display'

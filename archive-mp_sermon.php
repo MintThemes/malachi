@@ -17,10 +17,10 @@ get_header(); ?>
             
             
 <div id="main">
-    <div class="main-container">
-        <div class="box-t"></div>
-        <div class="box-holder">
+    <div id="main-inner">
+    <div id="main-inner-inner">
             <div id="content">
+             <div class="content-inner">
                 <div class="title">
                     <h2>
 					<?php
@@ -58,31 +58,23 @@ get_header(); ?>
 						}
 					?>
                     </h2>
-                </div>
-                <div class="sermons-holder">
-                    <div class="top">
-                    	<a href="<?php echo mp_sermons_podcast_url('itpc://', 'mp_sermon'); ?>"><?php _e('Subscribe to Podcast', 'mt_malachi'); ?></a>
+                    
+                     <div class="podcast-holder">
+           
+                        <a href="<?php echo mp_sermons_podcast_url('itpc://', 'mp_sermon'); ?>"><?php _e('Subscribe to Podcast', 'mt_malachi'); ?></a>
+                       
                     </div>
                 </div>
-                
+                        
                 <ul class="media-list">
 
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
         
         
-                    <li>
-                        <div class="img">
-                            <?php
-                            //get the post thumbnail for this post
-                            $image_id = get_post_thumbnail_id();  
-                            if ($image_id != ""){ 
-                            $image_url = wp_get_attachment_image_src($image_id,'full');  
-                            $image_url = $image_url[0];  
-                            ?>
-                            <a href="<?php the_permalink(); ?>" class="img-post"><img src="<?php echo mp_aq_resize($image_url, 254, 134, true); ?>" width="254px" height="134px" alt="<?php the_title(); ?>" /></a>
-                            <?php } ?>
-                        </div>
+                    <li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <?php echo mp_core_the_featured_image( get_the_ID(), 254, 134, '<div class="img"><a href="' . get_permalink() . '"><img src="', '" width="254px" height="134px" /></a></div>'); ?>
+						
                         <div class="text">
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             <em><?php echo get_the_date('F j, Y'); ?>  //  <a href="<?php the_permalink(); ?>"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></a></em>
@@ -95,12 +87,12 @@ get_header(); ?>
         
                 </ul><!-- media-list end -->
                  <?php get_template_part ('includes/pagination'); ?>
+                 
+                 </div>
             </div><!-- content end -->
 
     <?php get_sidebar(); ?>
-    
     </div>
-        <div class="box-b"></div>
     </div>
 </div><!-- main end -->
                                

@@ -29,27 +29,22 @@
 		
         <?php 
 		//Show the map		
-        echo '<strong class="map"><a href="' . get_theme_mod('mt_malachi_top_bar_map_url') . '">' . __('Map &amp; Directions', 'mt_malachi') . '</a></strong>';
+        echo '<strong class="map mt-malachi-icon-address"><a href="' . get_theme_mod('mt_malachi_top_bar_map_url') . '">' . __('Map &amp; Directions', 'mt_malachi') . '</a></strong>';
 		
 		
 		//Show the times
-        echo '<strong class="time">' . get_theme_mod('mt_malachi_top_bar_times') . '</strong>';
+        echo '<strong class="time mt-malachi-icon-calendar">' . get_theme_mod('mt_malachi_top_bar_times') . '</strong>';
+		
+		//Show Phone Number
+        echo '<strong class="mt-malachi-icon-phone">' . get_theme_mod('mt_malachi_top_bar_phone') . '</strong>';
 		
 		?>
     
         <div class="form-search">
     
-            <form action="<?php echo home_url( '/' ); ?>">
-    
-                <fieldset>
-    
-                    <input type="text" class="text" name="s" id="s"/>
-    
-                    <input class="btn-search" type="submit" value="<?php __('Search', 'mt_malachi'); ?>" />
-    
-                </fieldset>
-    
-            </form>
+			<?php //Show search form
+            	echo get_search_form();
+            ?>
     
         </div><!-- form-search end -->
         
@@ -68,28 +63,10 @@
                     <strong class="logo"><?php function_exists( 'mp_core_logo_image' ) ? mp_core_logo_image() : ''; ?></strong>
 
 					<ul id="nav">
-                    <?php
-					
-					$options = array(
-					'echo' => false,
-					'container' => false,
-					'theme_location'  => 'primary' 
-					);
-					
-					$menu = wp_nav_menu($options);
-					echo preg_replace( array( '#^<ul[^>]*>#', '#</ul>$#' ), '', $menu );
-					
-					?>
+                                       
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => 'mp_core_link_to_menu_editor' ) ); ?>
            
 					</ul>
 					</div>
 
 				</div><!-- header end -->
-
-
-
-
-
-
-
-

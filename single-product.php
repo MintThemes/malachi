@@ -20,21 +20,13 @@ get_header(); ?>
 									<h2><?php the_title(); ?></h2>
 								</div>
 								<div class="blog-post">
-									
-                                    <div class="text">
-                                                                        
-                                        <?php echo mp_jplayer($post->ID, 'jplayer'); ?>
-                                      
+                                <div class="top">
+										<p>Written by <?php the_author(); ?> on <?php the_time('F j, Y'); ?> - <?php comments_number('0','1','%'); ?> Comments</p>
+								</div>
+									<div class="text">
 										<?php the_content(); ?>
-                                        
-                                        <div class="bible_verse">
-											<?php _e('Scripture: ', 'mt_malachi'); ?><?php echo get_post_meta($post->ID, 'sermon_bible_verses', true); ?>
-                                        </div>
-	
-                                        <?php
-                                        wp_link_pages( array( 'before' => '' . __( 'Pages:', 'malachi' ), 'after' => '' ) ); 
-                                        edit_post_link( __( 'Edit', 'malachi' ), '', '' ); 
-										?>
+                                        <?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'malachi' ), 'after' => '' ) ); ?>
+                                        <?php edit_post_link( __( 'Edit', 'malachi' ), '', '' ); ?>
 									</div>
 								</div>
                                 <div class="comments">
@@ -45,6 +37,7 @@ get_header(); ?>
                                 </div>
 							</div><!-- content end -->
 							<?php get_sidebar(); ?>
+						
 						
 					</div>
 				</div><!-- main end -->

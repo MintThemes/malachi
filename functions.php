@@ -73,7 +73,7 @@ if (!function_exists('mp_core_textdomain')){
 	/**
 	 * Include Plugin Checker
 	 */
-	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/plugin-checker.php' );
+	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/class-plugin-checker.php' );
 	/**
 	 * Check if wp_core in installed
 	 */
@@ -89,6 +89,16 @@ else{
 	 * Check Malachi Theme for updates
 	 */
 	require( MT_MALACHI_THEME_DIR . '/includes/updater/mt-malachi-update.php' );
+	
+	/**
+	 * Include all the theme specific scripts from the mp_core
+	 */
+	add_action( 'after_setup_theme', 'mp_core_theme_specific_scripts' );
+	
+	/**
+	 * Check if mp_slide is installed
+	 */
+	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/included-plugins/mp-slide.php' );
 	
 	/**
 	 * Check if mp_sermons is installed
@@ -129,6 +139,11 @@ else{
 	 * Include hook functions for styling the slide widget
 	 */
 	require( MT_MALACHI_THEME_DIR . '/includes/misc-functions/mp-slide-hooks.php' );
+	
+	/**
+	 * Include hook functions for styling the sermon widget
+	 */
+	require( MT_MALACHI_THEME_DIR . '/includes/misc-functions/mp-sermons-hooks.php' );
 
 	/**
 	 * Enqueue Scripts
@@ -141,8 +156,9 @@ else{
 	require( MT_MALACHI_THEME_DIR . '/includes/settings/responsive-options.php' );
 	
 	/**
-	 * Include Homepage Sermon Widget
+	 * Include Tri Slot Widget
 	 */
-	require( MT_MALACHI_THEME_DIR . '/includes/widgets/home-page-sermon.php' );
+	require( MT_MALACHI_THEME_DIR . '/includes/widgets/tri-slot.php' );
+	
 	
 }

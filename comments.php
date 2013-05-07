@@ -13,6 +13,10 @@
  */
 
 //Call the mp_core_comments_template function if it exists
-function_exists ( 'mp_core_comments_template' ) ? mp_core_comments_template() : NULL;
+if ( function_exists ( 'mp_core_comments_template' ) ) {
+	mp_core_comments_template();
+}else{
+	wp_list_comments(); comment_form(); paginate_comments_links();
+}
 
 ?>

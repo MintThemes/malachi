@@ -36,8 +36,8 @@ function malachi_widgets_init() {
 		'name' => __( 'Primary Widget Area', 'mt_malachi' ),
 		'id' => 'primary-widget-area',
 		'description' => __( 'The primary widget area', 'mt_malachi' ),
-		'before_widget' => '<div class="sidebar-item"><div class="sidebar-item-inner">',
-		'after_widget' => '</div></div>',
+		'before_widget' => '<div class="sidebar-item">',
+		'after_widget' => '</div>',
 		'before_title' => '<div class="title"><h3>',
 		'after_title' => '</h3></div>',
 	) );

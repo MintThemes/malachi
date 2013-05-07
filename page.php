@@ -15,13 +15,15 @@
 get_header(); ?>
 
 <div id="main">
+<div id="main-inner">
+<div id="main-inner-inner">
 
             <?php while ( have_posts() ) : the_post(); ?>
             
 			<div id="content">
             
-                <div class="content-inner">
-    
+            <div class="content-inner">
+               
                     <div class="title">
                         <h2><?php the_title(); ?></h2>
                     </div>
@@ -43,18 +45,15 @@ get_header(); ?>
                         <?php comments_template(); ?>
         
                     </div><!-- comments end -->
-                
-                </div><!-- content inner -->
-            
+            </div>
 			</div><!-- content end -->
             
             <?php endwhile; ?>
 		
-			<?php get_sidebar(); ?>
-
+	
+   			<?php get_sidebar(); ?>
+</div>
+</div>
 </div><!-- main end -->
-
-<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'malachi' ), 'after' => '' ) ); ?>
-
 
 <?php get_footer(); ?>

@@ -3,3 +3,33 @@
 	width: 100%;
 	margin: 0 auto;
 }
+
+/* 700 screen width */
+@media screen and (max-width: 968px) {
+	#sidebar{
+		display:block;
+		width:100%;
+		padding:0px!important;
+		background:none!important;
+	}
+	#content{
+		display:block;	
+		width:100%;
+		background-image:none!important;
+	}
+	.content-inner{
+		margin:0px!important;	
+	}
+	#main-inner{
+		display:block;	
+	}
+}
+
+/* 400 screen width */
+@media screen and (max-width: 617px) {
+.form-search {
+	height: 25px;
+	float: left;
+	position: relative;
+	margin:9px 0px 9px 4px;
+}

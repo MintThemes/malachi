@@ -1,15 +1,20 @@
-jQuery(document).ready(function(){
-	initTextarea('.comment-form .textarea','textarea','textarea-active');
-	initTextarea('.comment-form .text','input','text-active');	
-
+jQuery(document).ready(function($){
+	
+	//Get the height of #content and #sidebar
+	content_height = $('#content').height();
+	sidebar_height = $('#sidebar').height();
+		
+	if (content_height > sidebar_height){
+		
+		$('#content').css('background-image', 'url(' + mt_malachi_main_js_vars.img_dir + '/bg-border.png)');
+		$('.content-inner').css('margin-right', '9px');
+			
+	}
+	else{
+		
+		$('#sidebar').css('background-image', 'url(' + mt_malachi_main_js_vars.img_dir + '/bg-border.png)');
+		$('#sidebar').css('padding-left', '9px');
+		
+	}	
+	
 });
-
-function initTextarea(_holder,_filed,_class){
-	var areaHolder = $(_holder);
-	var activeClass = _class;
-	areaHolder.each(function(){
-		var _this = $(this);
-		var area = _this.find(_filed);
-		area.focus(function(){_this.addClass(activeClass);}).blur(function(){_this.removeClass(activeClass);});
-	});
-}
