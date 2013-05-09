@@ -45,9 +45,6 @@ function mt_malachi_textdomain() {
 	$mofile_global = WP_LANG_DIR . '/malachi/' . $mofile;
 	
 	
-	echo $mofile_local;
-	
-	
 	if ( file_exists( $mofile_global ) ) {
 		// Look in global /wp-content/languages/malachi folder
 		load_textdomain( 'mt_malachi', $mofile_global );
