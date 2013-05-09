@@ -29,7 +29,8 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
 				'field_title' 	=> __('Select the source of slot #1:', 'mt_malachi_tri_slot'),
 				'field_description' 	=> NULL,
 				'field_type' 	=> 'select',
-				'field_select_values' =>  mp_core_get_all_post_types() + mp_core_get_all_tax_terms() ,
+				//'field_select_values' =>  mp_core_get_all_post_types() + mp_core_get_all_tax_terms() ,
+				'field_select_values' =>  array_merge(mp_core_get_all_post_types(), mp_core_get_all_tax_terms()),
 			),
 			"field3" => array(
 				'field_id' 			=> 'slot_2_title',
@@ -42,7 +43,8 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
 				'field_title' 	=> __('Select the source of slot #2:', 'mt_malachi_tri_slot'),
 				'field_description' 	=> NULL,
 				'field_type' 	=> 'select',
-				'field_select_values' =>   mp_core_get_all_post_types() + mp_core_get_all_tax_terms(),
+				//'field_select_values' =>  mp_core_get_all_post_types() + mp_core_get_all_tax_terms() ,
+				'field_select_values' =>  array_merge(mp_core_get_all_post_types(), mp_core_get_all_tax_terms()),
 			),
 			"field5" => array(
 				'field_id' 			=> 'slot_3_title',
@@ -55,7 +57,8 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
 				'field_title' 	=> __('Select the source of slot #3:', 'mt_malachi_tri_slot'),
 				'field_description' 	=> NULL,
 				'field_type' 	=> 'select',
-				'field_select_values' =>   mp_core_get_all_post_types() + mp_core_get_all_tax_terms(),
+				//'field_select_values' =>  mp_core_get_all_post_types() + mp_core_get_all_tax_terms() ,
+				'field_select_values' =>  array_merge(mp_core_get_all_post_types(), mp_core_get_all_tax_terms()),
 			),
 			
 			
