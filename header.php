@@ -52,21 +52,19 @@
 </div> 
 
 <div class="container">
-<div class="container-top">
+	
+    <div class="container-top">
 
-			<div id="wrapper">
-
-				<div id="header">
-
-					<div class="holder">
-
-                    <strong class="logo"><?php function_exists( 'mp_core_logo_image' ) ? mp_core_logo_image() : ''; ?></strong>
-
-					
-                                       
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => 'mp_core_link_to_menu_editor' ) ); ?>
-           
-					
-					</div>
-
-				</div><!-- header end -->
+        <div id="wrapper">
+    
+            <div id="header">
+    
+                <div class="holder">
+    
+                <strong class="logo"><?php function_exists( 'mp_core_logo_image' ) ? mp_core_logo_image() : ''; ?></strong>
+        
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => 'mp_core_link_to_menu_editor' ) ); ?>
+       
+                </div>
+    
+            </div><!-- header end -->

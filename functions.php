@@ -33,7 +33,7 @@ if( !defined( 'MT_MALACHI_THEME_FILE' ) )
 function mt_malachi_textdomain() {
 
 	// Set filter for plugin's languages directory
-	$mt_malachi_lang_dir = dirname( plugin_basename( MT_MALACHI_THEME_FILE ) ) . '/languages/';
+	$mt_malachi_lang_dir = dirname(  MT_MALACHI_THEME_FILE ) . '/languages/';
 	$mt_malachi_lang_dir = apply_filters( 'mt_malachi_languages_directory', $mt_malachi_lang_dir );
 
 	// Traditional WordPress plugin locale filter
@@ -43,8 +43,7 @@ function mt_malachi_textdomain() {
 	// Setup paths to current locale file
 	$mofile_local  = $mt_malachi_lang_dir . $mofile;
 	$mofile_global = WP_LANG_DIR . '/malachi/' . $mofile;
-	
-	
+		
 	if ( file_exists( $mofile_global ) ) {
 		// Look in global /wp-content/languages/malachi folder
 		load_textdomain( 'mt_malachi', $mofile_global );

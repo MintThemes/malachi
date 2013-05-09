@@ -16,10 +16,9 @@
 	 * then the sidebar simply doesn't exist, so we'll hard-code in
 	 * some default sidebar stuff just in case.
 	 */
-	if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
+	if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : 
 	
     
-    		
-	<?php endif; // end primary widget area ?>
+	endif; // end primary widget area ?>
 			
 </div>

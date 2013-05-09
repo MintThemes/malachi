@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Malachi Theme\n"
 "POT-Creation-Date: 2013-05-08 19:44-0500\n"
-"PO-Revision-Date: 2013-05-08 22:57-0500\n"
+"PO-Revision-Date: 2013-05-09 11:41-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -319,19 +319,22 @@ msgstr ""
 
 #: includes/plugin-checker/included-plugins/mp-sermons.php:9
 msgid "MP Sermons"
-msgstr ""
+msgstr "MP Sermons"
 
 #: includes/plugin-checker/included-plugins/mp-sermons.php:10
 msgid "To create sermons, you require the Sermons plugin. Install it here."
 msgstr ""
+"If ye wants to preach on this pirate ship ye'll need the sermon's plugin! "
+"YARRR!"
 
 #: includes/plugin-checker/included-plugins/mp-slide.php:9
 msgid "MP Slide"
-msgstr ""
+msgstr "Mp Slide"
 
 #: includes/plugin-checker/included-plugins/mp-slide.php:10
 msgid "To create sliders, you require the Slider plugin. Install it here."
 msgstr ""
+"Yar! Ye needs the slider plugin to make slides ya lily livered vermint!"
 
 #: includes/settings/responsive-options.php:22
 msgid "Responsive Options"
@@ -357,28 +360,28 @@ msgstr ""
 
 #: includes/widgets/tri-slot.php:14
 msgid "This widget should be placed on your homepage"
-msgstr ""
+msgstr "Ye best make this widget walk the plank to ye's homepage!"
 
 #: includes/widgets/tri-slot.php:23
 msgid "Enter the title of slot #1:"
-msgstr ""
+msgstr "The title of ye's lallygaggin' title!"
 
 #: includes/widgets/tri-slot.php:29
 msgid "Select the source of slot #1:"
-msgstr ""
+msgstr "Pick the source of ye's 1st slot carefully - yarr!"
 
 #: includes/widgets/tri-slot.php:36
 msgid "Enter the title of slot #2:"
-msgstr ""
+msgstr "The title of ye's lallygaggin' title!"
 
 #: includes/widgets/tri-slot.php:42
 msgid "Select the source of slot #2:"
-msgstr ""
+msgstr "Pick the source of ye's 2nd slot carefully - yarr!"
 
 #: includes/widgets/tri-slot.php:49
 msgid "Enter the title of slot #3:"
-msgstr ""
+msgstr "The title of ye's lallygaggin' title!"
 
 #: includes/widgets/tri-slot.php:55
 msgid "Select the source of slot #3:"
-msgstr ""
+msgstr "Pick the source of ye's 3rd slot carefully - yarr!"

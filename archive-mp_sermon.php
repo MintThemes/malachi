@@ -13,86 +13,53 @@
  */
 
 get_header(); ?>
-			
-            
-            
+			   
 <div id="main">
     <div id="main-inner">
-    <div id="main-inner-inner">
+    	<div id="main-inner-inner">
             <div id="content">
-             <div class="content-inner">
-                <div class="title">
-                    <h2>
-					<?php
-						if ( is_category() ) {
-							printf( '<span>' . single_cat_title( '', false ) . '</span>' );
-	
-						} elseif ( is_tag() ) {
-							printf( __( 'Tag Archives: %s', 'armonico' ), '<span>' . single_tag_title( '', false ) . '</span>' );
-	
-						} elseif ( is_author() ) {
-							/* Queue the first post, that way we know
-							 * what author we're dealing with (if that is the case).
-							*/
-							the_post();
-							printf( __( 'Author Archives: %s', 'armonico' ), '<span class="vcard"><a class="url fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' );
-							/* Since we called the_post() above, we need to
-							 * rewind the loop back to the beginning that way
-							 * we can run the loop properly, in full.
-							 */
-							rewind_posts();
-						} elseif ( get_post_type() ) {
-							printf( '<span>' . post_type_archive_title() . '</span>' );
-						} elseif ( is_day() ) {
-							printf( __( 'Daily Archives: %s', 'armonico' ), '<span>' . get_the_date() . '</span>' );
-	
-						} elseif ( is_month() ) {
-							printf( __( 'Monthly Archives: %s', 'armonico' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
-	
-						} elseif ( is_year() ) {
-							printf( __( 'Yearly Archives: %s', 'armonico' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
-	
-						} else {
-							_e( 'Archives', 'armonico' );
-	
-						}
-					?>
-                    </h2>
-                    
-                     <div class="podcast-holder">
-           
-                        <a href="<?php echo mp_sermons_podcast_url('itpc://', 'mp_sermon'); ?>"><?php _e('Subscribe to Podcast', 'mt_malachi'); ?></a>
-                       
-                    </div>
-                </div>
+                 <div class="content-inner">
+                    <div class="title">
+                        <h2><?php function_exists ( 'mp_core_archive_page_title' ) ? mp_core_archive_page_title() : _e( 'Archives', 'mt_malachi' ); ?></h2>
                         
-                <ul class="media-list">
-
-                <?php if (have_posts()) : ?>
-                <?php while (have_posts()) : the_post(); ?>
-        
-        
-                    <li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <?php echo mp_core_the_featured_image( get_the_ID(), 254, 134, '<div class="img"><a href="' . get_permalink() . '"><img src="', '" width="254px" height="134px" /></a></div>'); ?>
-						
-                        <div class="text">
-                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <em><?php echo get_the_date('F j, Y'); ?>  //  <a href="<?php the_permalink(); ?>"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></a></em>
-                            <?php the_excerpt(); ?>
+                        <div class="podcast-holder">
+               
+                           <a href="<?php echo mp_sermons_podcast_url('itpc://', 'mp_sermon'); ?>"><?php _e('Subscribe to Podcast', 'mt_malachi'); ?></a>
+                           
                         </div>
-                    </li>
+                        
+                    </div>
+                            
+                    <ul class="media-list">
+    
+                    <?php if (have_posts()) : ?>
+						<?php while (have_posts()) : the_post(); ?>
+                
+                
+                            <li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                
+                                <?php echo mp_core_the_featured_image( get_the_ID(), 254, 134, '<div class="img"><a href="' . get_permalink() . '"><img src="', '" width="254px" height="134px" /></a></div>'); ?>
+                                
+                                <div class="text">
+                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                    <em><?php echo get_the_date('F j, Y'); ?>  //  <a href="<?php the_permalink(); ?>"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></a></em>
+                                    <?php the_excerpt(); ?>
+                                </div>
+                            </li>
+                            
+                        <?php endwhile; // end of the loop. ?>
+                    <?php endif; ?>
+            
+                    </ul><!-- media-list end -->
                     
-                <?php endwhile; // end of the loop. ?>
-                <?php endif; ?>
-        
-                </ul><!-- media-list end -->
-                 <?php get_template_part ('includes/pagination'); ?>
-                 
-                 </div>
-            </div><!-- content end -->
+					<?php get_template_part ('includes/pagination'); ?>
+                     
+                    </div>
+            	
+                </div><!-- content end -->
 
-    <?php get_sidebar(); ?>
-    </div>
+   			<?php get_sidebar(); ?>
+    	</div>
     </div>
 </div><!-- main end -->
                                

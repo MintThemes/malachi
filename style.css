@@ -971,7 +971,7 @@ textarea{
 /* content end */
 /* sidebar start */
 #sidebar{
-	width:300px;
+	width:317px;
 	background-color:#FFFFFF;
 	background-repeat:repeat-y;
 	background-position:left;
@@ -1147,13 +1147,13 @@ textarea{
 	display:block;
 	height:100%;
 }
-.footer-nav{
+#footer .menu{
 	margin:0;
 	padding:0 0 5px;
 	list-style:none;
 	overflow:hidden;
 }
-.footer-nav li{
+#footer .menu li{
 	float:left;
 	background:url(css/images/separator-01.gif) no-repeat 0 4px;
 	margin-left:-4px;
@@ -1290,7 +1290,7 @@ iframe{
 	display:none;
 }
 #sidebar #searchform input[type="text"] {
-	width:201px;
+	width:227px;
 }
 
 /*sermons widget*/

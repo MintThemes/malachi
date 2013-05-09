@@ -8,6 +8,7 @@ jQuery(document).ready(function($){
 		
 		$('#content').css('background-image', 'url(' + mt_malachi_main_js_vars.img_dir + '/bg-border.png)');
 		$('.content-inner').css('margin-right', '9px');
+		$('#sidebar').css('width', '326px');
 			
 	}
 	else{
