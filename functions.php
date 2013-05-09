@@ -39,20 +39,25 @@ function mt_malachi_textdomain() {
 	// Traditional WordPress plugin locale filter
 	$locale        = apply_filters( 'plugin_locale',  get_locale(), 'malachi' );
 	$mofile        = sprintf( '%1$s-%2$s.mo', 'malachi', $locale );
-
+		
 	// Setup paths to current locale file
 	$mofile_local  = $mt_malachi_lang_dir . $mofile;
 	$mofile_global = WP_LANG_DIR . '/malachi/' . $mofile;
-
+	
+	
+	echo $mofile_local;
+	
+	
 	if ( file_exists( $mofile_global ) ) {
 		// Look in global /wp-content/languages/malachi folder
 		load_textdomain( 'mt_malachi', $mofile_global );
 	} elseif ( file_exists( $mofile_local ) ) {
+		
 		// Look in local /wp-content/themes/malachi/languages/ folder
 		load_textdomain( 'mt_malachi', $mofile_local );
 	} else {
 		// Load the default language files
-		load_plugin_textdomain( 'mt_malachi', false, $mt_malachi_lang_dir );
+		load_theme_textdomain( 'mt_malachi', $mt_malachi_lang_dir );
 	}
 
 }

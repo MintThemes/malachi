@@ -23,13 +23,43 @@
 	#main-inner{
 		display:block;	
 	}
+	/*tri slot widget*/
+	.tri-slot .col{
+		float:none;
+		width:100%;
+		border-left:none;
+		border-right:none;	
+	}
+	.tri-slot .col2, .tri-slot .col3{
+		border-top:1px solid #dbdfe2;	
+	}
 }
 
 /* 400 screen width */
 @media screen and (max-width: 617px) {
-.form-search {
-	height: 25px;
-	float: left;
-	position: relative;
-	margin:9px 0px 9px 4px;
+	.form-search {
+		height: 25px;
+		float: left;
+		position: relative;
+		margin:9px 0px 9px 4px;
+	}
+	/*sermon widget*/
+	#main .mp-sermons-latest-widget-title, #main .mp-sermons-latest-widget-btn-view-all{
+		float:left;
+		clear:left;
+		margin-top:10px;
+	}
+	#main .mp-sermons-latest-widget-date{
+		margin-top:10px;	
+	}
+	/*navigation*/
+	#header .menu, #nav {
+		float:left;	
+		margin:0px 0px 0px 3px;
+		padding:0px;
+	}
+	#header .menu .menu-item{
+		margin-bottom:9px;	
+	}
+
 }

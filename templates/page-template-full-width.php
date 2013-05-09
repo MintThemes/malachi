@@ -16,11 +16,11 @@ get_header(); ?>
 
 <div id="main">
 					<div id="main-inner" class="full-width">
-                    <div id="main-inner-inner" class="full-width">
+                    <div id="main-inner-inner">
 						
                         
-							<div id="content" class="full-width">
-                            <div class="content-inner full-width">
+							<div id="content">
+                            <div class="content-inner">
 						
                         	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 							<div class="heading-box">

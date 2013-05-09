@@ -11,6 +11,8 @@ get_header(); ?>
 
 <div id="main">
 					<div id="main-inner">
+                    
+                    	<div id="main-inner-inner">
 						
                         
 							<div id="content">
@@ -19,15 +21,19 @@ get_header(); ?>
                         		<div class="title">
 									<h2><?php the_title(); ?></h2>
 								</div>
+                                
+                                <div class="post-date">
+                                	Written by <?php the_author(); ?> on <?php the_time('F j, Y'); ?> - <?php comments_number('0','1','%'); ?> Comments
+                                </div>
+                                
 								<div class="blog-post">
-                                <div class="top">
-										<p>Written by <?php the_author(); ?> on <?php the_time('F j, Y'); ?> - <?php comments_number('0','1','%'); ?> Comments</p>
-								</div>
-									<div class="text">
-										<?php the_content(); ?>
-                                        <?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'malachi' ), 'after' => '' ) ); ?>
-                                        <?php edit_post_link( __( 'Edit', 'malachi' ), '', '' ); ?>
-									</div>
+
+                                <div class="text">
+                                    <?php the_content(); ?>
+                                    <?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'malachi' ), 'after' => '' ) ); ?>
+                                    <?php edit_post_link( __( 'Edit', 'malachi' ), '', '' ); ?>
+                                </div>
+                                
 								</div>
                                 <div class="comments">
                                 <?php comments_template( '', true ); ?>
@@ -40,6 +46,7 @@ get_header(); ?>
 						
 						
 					</div>
+                    </div>
 				</div><!-- main end -->
 						
 						

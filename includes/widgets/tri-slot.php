@@ -103,7 +103,7 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
 		
 		?>
         <div class="tri-slot">
-            <div class="col">
+            <div class="col col1">
             
                 <?php if ( !empty( $instance['slot_1_title'] )) { ?>
                     <div class="tri-slot-title">
@@ -163,7 +163,7 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
             
             </div>
         
-        	<div class="col">
+        	<div class="col col2">
             
                 <?php if ( !empty( $instance['slot_2_title'] )) { ?>
                     <div class="tri-slot-title">
@@ -223,7 +223,7 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
             </div>
 
         
-        	<div class="col">
+        	<div class="col col3">
             
                 <?php if ( !empty( $instance['slot_3_title'] )) { ?>
                     <div class="tri-slot-title">

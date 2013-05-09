@@ -62,11 +62,11 @@
 
                     <strong class="logo"><?php function_exists( 'mp_core_logo_image' ) ? mp_core_logo_image() : ''; ?></strong>
 
-					<ul id="nav">
+					
                                        
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => 'mp_core_link_to_menu_editor' ) ); ?>
            
-					</ul>
+					
 					</div>
 
 				</div><!-- header end -->

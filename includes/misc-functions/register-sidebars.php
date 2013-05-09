@@ -25,8 +25,8 @@ function malachi_widgets_init() {
 		'name' => __( 'Footer', 'mt_malachi' ),
 		'id' => 'footer-widget-area',
 		'description' => __( 'Widgets for the footer', 'mt_malachi' ),
-		'before_widget' => '<div class="footer-widget">',
-		'after_widget' => '</div>',
+		'before_widget' => '<div class="footer-widget"><div class="footer-widget-inner">',
+		'after_widget' => '</div></div>',
 		'before_title' => '<div class="title"><h3>',
 		'after_title' => '</h3></div>',
 	) );

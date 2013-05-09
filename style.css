@@ -194,7 +194,8 @@ select:focus{outline:none;}
 	display:block;
 	clear:both;
 }
-#nav .menu{
+#header .menu{
+	display:inline-block;
 	margin:0;
 	padding:18px 10px 0 0;
 	list-style:none;
@@ -202,13 +203,13 @@ select:focus{outline:none;}
 	text-shadow:0 2px 1px #3d3d3d;
 	z-index:3000;
 }
-#nav .menu li{
+#header .menu li{
 	float:left;
 	text-align:center;
 	font:14px/33px; font-family: 'Droid Sans', sans-serif; font-weight: 700;
 	padding-right:3px;
 }
-#nav .menu li a{
+#header .menu li a{
 	display:block;
 	width:105px;
 	height:36px;
@@ -217,7 +218,7 @@ select:focus{outline:none;}
 	background:url(css/images/bg-nav.png) no-repeat;
 	padding-top:8px;
 }
-#nav .menu > li > a{
+#header .menu > li > a{
 	font-family: 'Droid Sans', sans-serif;
 	font-weight: 700;
 	color: #ffffff;
@@ -238,17 +239,17 @@ select:focus{outline:none;}
 	height:auto;
 	box-shadow:2px 2px 1px rgba(0, 0, 0, 0.12);
 }
-#nav .menu li.active a{background:url(css/images/bg-nav-active.png) no-repeat;}
-#nav .menu li:hover a{
+#header .menu li.active a{background:url(css/images/bg-nav-active.png) no-repeat;}
+#header .menu li:hover a{
 	text-decoration:none;
 	background:url(css/images/bg-nav-hover.png) no-repeat;
 }
-#nav .menu li:hover{position:relative;}
-#nav .menu li ul,
-#nav .menu li:hover ul li ul{display:none;}
-#nav .menu li:hover ul,
-#nav .menu li ul li:hover ul{display:block;}
-#nav .menu li ul{
+#header .menu li:hover{position:relative;}
+#header .menu li ul,
+#header .menu li:hover ul li ul{display:none;}
+#header .menu li:hover ul,
+#header .menu li ul li:hover ul{display:block;}
+#header .menu li ul{
 	position:absolute;
 	left:3px;
 	top:30px;
@@ -260,13 +261,13 @@ select:focus{outline:none;}
 	z-index: 100000;
 	text-shadow:none;
 }
-#nav .menu li ul ul{
+#header .menu li ul ul{
 	top:4px;
 	left:105px;
 	z-index:100;
 	z-index: 100;
 }
-#nav .menu li ul li{
+#header .menu li ul li{
 	font-family: 'Droid Sans', sans-serif; font-weight: 400;
 	font:12px/15px;
 	line-height:7px;
@@ -275,21 +276,21 @@ select:focus{outline:none;}
 	text-align:left;
 	background:url(css/images/bg-drop.png) repeat-y
 }
-#nav .menu li ul li:first-child{
+#header .menu li ul li:first-child{
 	background:url(css/images/bg-drop-t.png) no-repeat;
 	padding-top:46px;
 }
-#nav .menu li ul li:last-child{background:none;}
-#nav .menu li ul li:only-child{
+#header .menu li ul li:last-child{background:none;}
+#header .menu li ul li:only-child{
 	background:url(css/images/onlychild.png) no-repeat;
 	padding-top:46px;
 }
-#nav .menu li ul li a,
-#nav .menu li:hover ul li a,
-#nav .menu li.active ul li a,
-#nav .menu li ul li:hover ul li a,
-#nav .menu li:hover ul li:hover ul li a,
-#nav .menu li.active ul li:hover ul li a{
+#header .menu li ul li a,
+#header .menu li:hover ul li a,
+#header .menu li.active ul li a,
+#header .menu li ul li:hover ul li a,
+#header .menu li:hover ul li:hover ul li a,
+#header .menu li.active ul li:hover ul li a{
 	color:#3d3d3d;
 	height:auto;
 	width:auto;
@@ -297,14 +298,14 @@ select:focus{outline:none;}
 	border-bottom: 1px solid #b9bcbe;
 	padding-bottom:10px;
 }
-#nav .menu li ul li:hover a,
-#nav .menu li:hover ul li:hover a,
-#nav .menu li.active ul li:hover a,
-#nav .menu li ul li:hover ul li a:hover,
-#nav .menu li:hover ul li:hover ul li a:hover,
-#nav .menu li.active ul li:hover ul li a:hover{color:#000000;}
-#nav .menu li ul li:last-child a,
-#nav .menu li ul ul li:last-child a{border:0 !important;}
+#header .menu li ul li:hover a,
+#header .menu li:hover ul li:hover a,
+#header .menu li.active ul li:hover a,
+#header .menu li ul li:hover ul li a:hover,
+#header .menu li:hover ul li:hover ul li a:hover,
+#header .menu li.active ul li:hover ul li a:hover{color:#000000;}
+#header .menu li ul li:last-child a,
+#header .menu li ul ul li:last-child a{border:0 !important;}
 /* header end */
 /* main start */
 #main{padding-bottom:23px; clear:both; display:inline-block; width:100%;}
@@ -390,8 +391,15 @@ select:focus{outline:none;}
 	padding-right:4px;	
 }
 
-#main .mp-sermons-latest-widget-title, #main .mp-sermons-latest-widget-date{
-	padding:9px; 	
+#main .mp-sermons-latest-widget-title{
+	padding:9px 3px 9px 0px;
+}
+#main .mp-sermons-latest-widget-date{
+	padding:9px 9px 9px 0px;	
+	font-style:italic; 	
+}
+#main .mp-sermons-latest-widget-date:before{
+	content:' - ';	
 }
 
 #content .text .btn-listen{
@@ -432,30 +440,28 @@ select:focus{outline:none;}
 .latest-box strong em{
 	font:13px; font-family: 'Droid Sans', sans-serif; font-weight: 400;
 }
+/*Tri Slot */
 .tri-slot{width:100%;}
-.tri-slot .col,
-.tri-slot .col2,
-.tri-slot .col3{
-	width:317px;
+.tri-slot .col{
+	width:33.33%;
+	height:171px;
 	float:left;
 	border-right: 1px solid #dbdfe2;
-}
-.tri-slot .col2{width:324px;}
-.tri-slot .col3{
-	width:316px;
-	position:relative;
+	border-left: 1px solid #dbdfe2;
 }
 .tri-slot .tri-slot-title{
-	background:url(css/images/bg-title.gif) repeat-x;
+	background: #fbfbfb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fbfbfb 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fbfbfb 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fbfbfb 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fbfbfb 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fbfbfb 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
 	text-align:center;
-}
-.tri-slot .col2 .title,
-.tri-slot .col3 .title{
-	border-left:1px solid #dbdfe2;
-}
-.col3 .title{
 	border-bottom:1px solid #dbdfe2;
 }
+
 .tri-slot .tri-slot-title h3{
 	margin:0;
 	padding:10px;
@@ -467,40 +473,27 @@ select:focus{outline:none;}
 	list-style:none;
 }
 .tri-slot .col ul li{
-	border-top:1px solid #dbdfe2;
+	border-bottom:1px solid #dbdfe2;
+	padding:14px 45px 14px 12px;
+}
+.tri-slot .col ul li:nth-child(3){
+	border-bottom:none;
 	padding:14px 45px 14px 12px;
 }
 .tri-slot .col ul li a:hover{
 	color:#000000;
 	text-decoration:none;
 }
-.tri-slot .col2 ul{
-	margin:0;
-	padding:0;
-	list-style:none;
+.tri-slot .col1{
+	border-left: none;
 }
-.tri-slot .col2 ul li{
-	border-top:1px solid #dbdfe2;
-	padding:14px 10px 14px 16px;
+.tri-slot .col2{
+	border-left: none;
+	border-right: none;
 }
-.tri-slot .col2 ul li a:hover{
-	color:#000000;
-	text-decoration:none;
-}
-.tri-slot .holder{
-	overflow:hidden;
-	background:url(css/images/divider-01.gif) repeat-y;
-}
-.tri-slot .col3 ul{
-	margin:0;
-	padding:16px 0 0 17px;
-	list-style:none;
-}
-.tri-slot .col3 .btn-map{
-	position:relative;
-	margin-left: 15px;
-	margin-top:10px;
-	margin-bottom:10px;
+.tri-slot .col3{
+	border-right: none;
+	margin-right:-2px;
 }
 #content{
 	width:634px;
@@ -1139,7 +1132,6 @@ textarea{
 }
 .powered{
 	float:right;
-	width:300px;
 }
 .powered span{float:right;}
 .logo-powered{
@@ -1277,9 +1269,15 @@ iframe{
 /*Full-Width*/
 #main .full-width{
 	display:block;
+}
+#main .full-width #content{
+	display:block;
 	width:100%;
-	margin:0px!important;	
 	background-image:none!important;
+	margin:0px;
+}
+#main .full-width .content-inner {
+	margin: 0px!important;
 }
 
 /*Post Date on a post*/
@@ -1290,6 +1288,9 @@ iframe{
 /*Search form*/
 #searchform .screen-reader-text{
 	display:none;
+}
+#sidebar #searchform input[type="text"] {
+	width:201px;
 }
 
 /*sermons widget*/

@@ -12,12 +12,18 @@ get_header(); ?>
 <div id="main">
 					<div id="main-inner">
 						
-                        
+                        <div id="main-inner-inner">
 							<div id="content">
                             <div class="content-inner">
 								<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                         		<div class="title">
 									<h2><?php the_title(); ?></h2>
+                                    
+                                    <div class="podcast-holder">
+           
+                                        <a href="<?php echo mp_sermons_podcast_url('itpc://', 'mp_sermon'); ?>"><?php _e('Subscribe to Podcast', 'mt_malachi'); ?></a>
+                                       
+                                    </div>
 								</div>
 								<div class="blog-post">
 									
@@ -46,6 +52,7 @@ get_header(); ?>
 							</div><!-- content end -->
 							<?php get_sidebar(); ?>
 						
+                        </div>
 					</div>
 				</div><!-- main end -->
 						

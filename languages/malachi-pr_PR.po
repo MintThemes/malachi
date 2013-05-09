@@ -1,0 +1,384 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Malachi Theme\n"
+"POT-Creation-Date: 2013-05-08 19:44-0500\n"
+"PO-Revision-Date: 2013-05-08 22:57-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:22 404.php:29
+msgid "Nothing Found. 404."
+msgstr "Yarr Matey. Thars no treasure here!"
+
+#: archive-mp_sermon.php:31 archive.php:34
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: archive-mp_sermon.php:38 archive.php:41 author.php:24
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: archive-mp_sermon.php:47 archive.php:50
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive-mp_sermon.php:50 archive.php:53
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive-mp_sermon.php:53 archive.php:56
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive-mp_sermon.php:56 archive.php:59
+msgid "Archives"
+msgstr "All ye's post be buried like treasure here! Yarr!"
+
+#: archive-mp_sermon.php:64 single-mp_sermon.php:24
+msgid "Subscribe to Podcast"
+msgstr ""
+
+#: attachment.php:54
+msgid "Continue reading &rarr;"
+msgstr ""
+
+#: attachment.php:55 single-mp_sermon.php:41 single-product.php:33
+#: single.php:33
+msgid "Pages:"
+msgstr ""
+
+#: author.php:31
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: footer.php:40
+msgid "Copyright"
+msgstr ""
+
+#: footer.php:40
+msgid "All rights reserved."
+msgstr ""
+
+#: header.php:32
+msgid "Map &amp; Directions"
+msgstr ""
+
+#: page.php:37 single-mp_sermon.php:42 single-product.php:34 single.php:34
+msgid "Edit"
+msgstr ""
+
+#: single-mp_sermon.php:37
+msgid "Scripture: "
+msgstr ""
+
+#: includes/misc-functions/customizer.php:18
+msgid "Top Bar"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:21
+msgid "Show Top Bar?"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:30
+#: includes/misc-functions/customizer.php:146
+msgid "Text Color"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:39
+#: includes/misc-functions/customizer.php:186
+msgid "Background Image"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:48
+#: includes/misc-functions/customizer.php:195
+msgid "Disable Background Image"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:57
+#: includes/misc-functions/customizer.php:177
+msgid "Background Color"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:66
+msgid "Map URL"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:75
+msgid "Display Map?"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:84
+msgid "Meeting Times"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:93
+msgid "Display Times?"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:102
+msgid "Phone Number"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:111
+msgid "Display Phone Number?"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:120
+msgid "Display Search?"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:130
+msgid "Header Navigation"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:133
+msgid "Navigation Text Color"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:143
+msgid "Text Colors"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:155
+msgid "Link Color"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:164
+msgid "Link Hover Color"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:174
+#, php-format
+msgid "%s Options"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:204
+msgid "Background Image Repeat"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:209
+msgid "No Repeat"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:210
+msgid "Tile"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:211
+msgid "Tile Horizontally"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:212
+msgid "Tile Vertically"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:219
+msgid "Background Image Position"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:224
+msgid "None"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:225
+msgid "Left"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:226
+msgid "Center"
+msgstr ""
+
+#: includes/misc-functions/customizer.php:227
+msgid "Right"
+msgstr ""
+
+#: includes/misc-functions/mp-core-hooks.php:24
+msgid "Name"
+msgstr ""
+
+#: includes/misc-functions/mp-core-hooks.php:27
+msgid "Email"
+msgstr ""
+
+#: includes/misc-functions/mp-core-hooks.php:30
+msgid "Website"
+msgstr ""
+
+#: includes/misc-functions/mp-core-hooks.php:36
+msgid "Comment"
+msgstr ""
+
+#: includes/misc-functions/register-sidebars.php:14
+msgid "Home Page"
+msgstr ""
+
+#: includes/misc-functions/register-sidebars.php:16
+msgid "Widgets for the homepage"
+msgstr ""
+
+#: includes/misc-functions/register-sidebars.php:25
+msgid "Footer"
+msgstr ""
+
+#: includes/misc-functions/register-sidebars.php:27
+msgid "Widgets for the footer"
+msgstr ""
+
+#: includes/misc-functions/register-sidebars.php:36
+msgid "Primary Widget Area"
+msgstr ""
+
+#: includes/misc-functions/register-sidebars.php:38
+msgid "The primary widget area"
+msgstr ""
+
+#: includes/misc-functions/theme-setup.php:29
+msgid "Primary Navigation"
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:127
+#: includes/plugin-checker/class-plugin-checker.php:299
+msgid "Activate"
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:153
+#: includes/plugin-checker/class-plugin-checker.php:157
+msgid "Automatically Install"
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:230
+msgid "Install "
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:233
+msgid ""
+"You don't have permission to do this. Contact the system administrator for "
+"assistance."
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:236
+msgid "Oops! Something went wrong"
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:242
+msgid "Security Check"
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:277
+msgid "Unable to find file! Please contact the author of this plugin."
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:291
+msgid "Error saving file!"
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:292
+msgid "Try downloading it directly:"
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:296
+msgid "Successfully Installed "
+msgstr ""
+
+#: includes/plugin-checker/class-plugin-checker.php:302
+msgid "View all Plugins"
+msgstr ""
+
+#: includes/plugin-checker/included-plugins/mp-core-check.php:10
+msgid "You require the Move Plugins Core plugin. Install it here."
+msgstr ""
+
+#: includes/plugin-checker/included-plugins/mp-links.php:9
+msgid "MP Links"
+msgstr ""
+
+#: includes/plugin-checker/included-plugins/mp-links.php:10
+msgid "To add social links, you'll need the links plugin. Install it here."
+msgstr ""
+
+#: includes/plugin-checker/included-plugins/mp-people.php:9
+msgid "Move Plugins People"
+msgstr ""
+
+#: includes/plugin-checker/included-plugins/mp-people.php:10
+msgid "To create a staff section you will need the People plugin."
+msgstr ""
+
+#: includes/plugin-checker/included-plugins/mp-sermons.php:9
+msgid "MP Sermons"
+msgstr ""
+
+#: includes/plugin-checker/included-plugins/mp-sermons.php:10
+msgid "To create sermons, you require the Sermons plugin. Install it here."
+msgstr ""
+
+#: includes/plugin-checker/included-plugins/mp-slide.php:9
+msgid "MP Slide"
+msgstr ""
+
+#: includes/plugin-checker/included-plugins/mp-slide.php:10
+msgid "To create sliders, you require the Slider plugin. Install it here."
+msgstr ""
+
+#: includes/settings/responsive-options.php:22
+msgid "Responsive Options"
+msgstr ""
+
+#: includes/settings/settings-tab-general.php:20
+msgid "Malachi Responsive Settings"
+msgstr ""
+
+#: includes/settings/settings-tab-general.php:41
+msgid "Responsive Settings"
+msgstr ""
+
+#: includes/settings/settings-tab-general.php:48
+msgid "Turn Reponsive Off?"
+msgstr ""
+
+#: includes/settings/settings-tab-general.php:55
+msgid ""
+"Check this if you do NOT want to use the responsive layout for the Malachi "
+"Theme."
+msgstr ""
+
+#: includes/widgets/tri-slot.php:14
+msgid "This widget should be placed on your homepage"
+msgstr ""
+
+#: includes/widgets/tri-slot.php:23
+msgid "Enter the title of slot #1:"
+msgstr ""
+
+#: includes/widgets/tri-slot.php:29
+msgid "Select the source of slot #1:"
+msgstr ""
+
+#: includes/widgets/tri-slot.php:36
+msgid "Enter the title of slot #2:"
+msgstr ""
+
+#: includes/widgets/tri-slot.php:42
+msgid "Select the source of slot #2:"
+msgstr ""
+
+#: includes/widgets/tri-slot.php:49
+msgid "Enter the title of slot #3:"
+msgstr ""
+
+#: includes/widgets/tri-slot.php:55
+msgid "Select the source of slot #3:"
+msgstr ""
