@@ -30,7 +30,7 @@ if ( ! function_exists( 'malachi_scripts' ) ):
 		wp_enqueue_script( 'jquery' );
 		
 		//Responsive CSS - load if the user hasn't disabled it
-		$responsive_check = mp_core_get_option( 'mt_malachi_responsive_settings_general',  'responsive_check' );
+		$responsive_check = get_theme_mod('mt_malachi_responsive_off');
 		if ( empty( $responsive_check ) ){
 			wp_enqueue_style( 'mt_responsive', get_template_directory_uri() . '/css/responsive.css' );
 		}

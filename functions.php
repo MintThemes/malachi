@@ -150,12 +150,7 @@ else{
 	 * Enqueue Scripts
 	 */
 	require( MT_MALACHI_THEME_DIR . '/includes/misc-functions/enqueue-scripts.php' );
-	
-	/**
-	 * Include Responsive Options
-	 */
-	require( MT_MALACHI_THEME_DIR . '/includes/settings/responsive-options.php' );
-	
+		
 	/**
 	 * Include Tri Slot Widget
 	 */

@@ -15,7 +15,18 @@ function mt_malachi_customizer(){
 	$theme = wp_get_theme(); // $theme->Name
 	
 	$args = array(
-		array( 'section_id' => 'mt_malachi_top_bar', 'section_title' => __( 'Top Bar', 'mp_core' ),'section_priority' => 1,
+		array( 'section_id' => 'mt_malachi_responsive', 'section_title' => __( 'Responsive Settings', 'mp_core' ),'section_priority' => 1,
+			'settings' => array(
+				'mt_malachi_responsive_off' => array(
+					'label'      => __( 'Turn Responsive OFF?', 'mp_core' ),
+					'type'       => 'checkbox',
+					'default'    => '',
+					'priority'   => 1,
+					'arg' => 'responsive'
+				),
+			)
+		),
+		array( 'section_id' => 'mt_malachi_top_bar', 'section_title' => __( 'Top Bar', 'mp_core' ),'section_priority' => 2,
 			'settings' => array(
 				'mt_malachi_top_bar' => array(
 					'label'      => __( 'Show Top Bar?', 'mp_core' ),
