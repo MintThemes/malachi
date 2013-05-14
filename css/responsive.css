@@ -44,12 +44,12 @@
 		margin:9px 0px 9px 4px;
 	}
 	/*sermon widget*/
-	#main .mp-sermons-latest-widget-title, #main .mp-sermons-latest-widget-btn-view-all{
+	#main .mp-sermons-widget-title, #main .mp-sermons-widget-btn-view-all{
 		float:left;
 		clear:left;
 		margin-top:10px;
 	}
-	#main .mp-sermons-latest-widget-date{
+	#main .mp-sermons-widget-date{
 		margin-top:10px;	
 	}
 	/*navigation*/

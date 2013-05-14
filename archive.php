@@ -43,7 +43,7 @@ get_header(); ?>
                                                             
                                     <div class="text">
                                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                        <em><?php echo get_the_date('F j, Y'); ?>  //  <a href="<?php the_permalink(); ?>"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></a></em>
+                                        <em><?php echo get_the_date('F j, Y'); ?>  <a href="<?php the_permalink(); ?>"><?php comments_number( '', '// 1 Comment', '// % Comments' ); ?></a></em>
                                         <?php the_excerpt(); ?>
                                     </div>
                                 </li>

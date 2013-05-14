@@ -20,22 +20,18 @@ get_header(); ?>
                     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                     <div class="title">
                         <h2><?php the_title(); ?></h2>
-                        
-                        <div class="podcast-holder">
-    
-                            <a href="<?php echo mp_sermons_podcast_url('itpc://', 'mp_sermon'); ?>"><?php _e('Subscribe to Podcast', 'mt_malachi'); ?></a>
-                           
-                        </div>
                     </div>
                     <div class="blog-post">
                         
                         <div class="text">
-                        
-							<?php echo mp_sermons_the_sermon($post->ID); ?>
-                                                        
+                                   
+                            <?php echo mp_core_the_featured_image( get_the_id() , 254, 134, '<div class="single-featured-image"><img src="', '" width="254px" height="134px" /></div>');  ?>         
+                                                                  
                             <?php the_content(); ?>
-                            
-                           <?php
+    						
+                            <?php mp_people_links_list( get_the_id() ); ?>   
+                             
+                            <?php
                             wp_link_pages( array( 'before' => '' . __( 'Pages:', 'malachi' ), 'after' => '' ) ); 
                             edit_post_link( __( 'Edit', 'malachi' ), '', '' ); 
                             ?>

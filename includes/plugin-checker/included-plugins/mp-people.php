@@ -6,7 +6,7 @@
  if (!function_exists('mp_people_plugin_check')){
 	function mp_people_plugin_check() {
 		$args = array(
-			'plugin_name' => __('Move Plugins People', 'mt_malachi'), 
+			'plugin_name' => __('MP People', 'mt_malachi'), 
 			'plugin_message' => __('To create a staff section you will need the People plugin.', 'mt_malachi'), 
 			'plugin_slug' => 'mp-people', 
 			'plugin_filename' => 'mp-people.php',

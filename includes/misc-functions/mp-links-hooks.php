@@ -22,4 +22,4 @@ function mt_malachi_mp_links_array($mp_links_array){
 	$mp_links_array = array('mp-links-facebook' => 'Facebook', 'mp-links-twitter' => 'Twitter', 'mp-links-youtube' => 'YouTube', 'mp-links-vimeo' => 'Vimeo', 'mp-links-email' => 'Email');
 	return $mp_links_array;
 }
-add_filter( 'mp_links_array', 'mt_malachi_mp_links_array');
+//add_filter( 'mp_links_array', 'mt_malachi_mp_links_array');

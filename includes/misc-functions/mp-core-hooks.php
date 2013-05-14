@@ -42,4 +42,5 @@ add_filter( 'mp_core_comment_form_args', 'mt_malachi_comment_form_args', 10, 4);
 /**
  * Make sure the home page is created, has page template, and is set to be front page
  */
-add_action("after_switch_theme", "mp_core_make_home_page", 10 ,  2);
+add_action("after_switch_theme", "mp_core_make_home_page", 10, 2);
+register_activation_hook( ABSPATH . 'wp-content/plugins/mp-core/mp-core.php', "mp_core_make_home_page" );

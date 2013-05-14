@@ -352,10 +352,10 @@ select:focus{outline:none;}
 	left:1011px;
 }
 .latest-box{padding-bottom:17px;}
-#main .mp-sermons-latest-widget-btn-listen,
-#main .mp-sermons-latest-widget-btn-download,
-#main .mp-sermons-latest-widget-btn-podcast,
-#main .mp-sermons-latest-widget-btn-view-all,
+#main .mp-sermons-widget-btn-listen,
+#main .mp-sermons-widget-btn-download,
+#main .mp-sermons-widget-btn-podcast,
+#main .mp-sermons-widget-btn-view-all,
 .btn-map{
 	font-family: 'Droid Sans', sans-serif;
 	font-weight: 700;
@@ -380,25 +380,25 @@ select:focus{outline:none;}
 	cursor:pointer;
 }
 
-#main .mp-sermons-latest-widget-btn-listen, #main .mp-sermons-latest-widget-btn-podcast{
+#main .mp-sermons-widget-btn-listen, #main .mp-sermons-widget-btn-podcast{
 	padding-left:13px!important;	
 }
-#main .mp-sermons-latest-widget-btn-listen:hover, #main .mp-sermons-latest-widget-btn-podcast:hover, #main .mp-sermons-latest-widget-btn-view-all:hover{
+#main .mp-sermons-widget-btn-listen:hover, #main .mp-sermons-widget-btn-podcast:hover, #main .mp-sermons-widget-btn-view-all:hover{
 	background-image: url(css/images/btn-dark-bg-hover.png);	
 	text-decoration:none;
 }
-.mp-sermons-latest-widget-btn-listen:before, .mp-sermons-latest-widget-btn-podcast:before{
+.mp-sermons-widget-btn-listen:before, .mp-sermons-widget-btn-podcast:before{
 	padding-right:4px;	
 }
 
-#main .mp-sermons-latest-widget-title{
+#main .mp-sermons-widget-title{
 	padding:9px 3px 9px 0px;
 }
-#main .mp-sermons-latest-widget-date{
+#main .mp-sermons-widget-date{
 	padding:9px 9px 9px 0px;	
 	font-style:italic; 	
 }
-#main .mp-sermons-latest-widget-date:before{
+#main .mp-sermons-widget-date:before{
 	content:' - ';	
 }
 
@@ -640,8 +640,8 @@ select:focus{outline:none;}
 .media-list li .text{padding:0px 0px 9px 3px;}
 .media-list li .text h3{
 	margin:0 0 11px;
-	font-size:12px;
-	line-height:15px;
+	font-size:17px;
+	line-height:20px;
 	font-weight:normal;
 }
 .media-list li .text em{
@@ -1101,6 +1101,8 @@ textarea{
 .homepage-widget .social-holder ul{
 	padding: 0px 0 0px 0px;
 }
+
+/*MP Links*/
 .social-holder{
 	background:url(css/images/bg-footer.gif) repeat-x;
 	width:100%;
@@ -1114,8 +1116,19 @@ textarea{
 	float:left;
 	position:relative;
 	left:50%;
+	font-size:0px;
 }
+.social-holder ul li a:before{
+	margin:0;
+	font-size:100px;
+}
+
+/*MP Links in sidebar*/
 #sidebar .social-holder ul li{
+	margin:0px;
+	font-size:0px;
+}
+#sidebar .social-holder ul li a:before{
 	margin:0px;
 	font-size:70px;
 }
@@ -1126,6 +1139,13 @@ textarea{
 	margin:0px 10px 0px 10px;
 }
 .social-holder ul li img{vertical-align:top;}
+
+/*MP Links in footer*/
+#footer .social-holder ul{
+	padding-top:15px;		
+}
+
+
 #footer .holder{
 	overflow:hidden;
 	padding:16px 17px 0 14px;
@@ -1290,22 +1310,96 @@ iframe{
 	display:none;
 }
 #sidebar #searchform input[type="text"] {
-	width:227px;
+	width:215px;
 }
 
 /*sermons widget*/
 
-.latest-sermon{
+.sermon{
 	padding:9px;
 	overflow: auto;
 }
 
-.latest-sermon a, .latest-sermon div{
+.sermon a, .sermon div{
 	float:left;
 }
-.latest-sermon .mp-sermons-latest-widget-btn-view-all{
+.sermon .mp-sermons-widget-btn-view-all{
 	float:right;	
 }
 .isotopenav{
 	padding-left:15px;	
+}
+
+/*sermons archive page*/
+.type-mp_sermon .homepage-widget-inner .img{
+	margin-right:10px;
+}
+
+#content .sermon-archives-title{
+	background-image:none;	
+}
+
+/*single sermon page */
+
+.mp-books-of-the-bible-list-title, .mp-preachers-list-title, .mp-series-list-title, .mp-topics-list-title, .mp_sermons_bible_verses{
+	display:block;
+	clear:left;
+	float:left;
+	margin-right:5px;
+}
+.mp-books-of-the-bible-list, .mp-preachers-list, .mp-series-list, .mp-topics-list{
+	list-style:none;
+	clear:right;
+	float:left;
+	display:block;
+	margin:0px;
+	padding:0px;
+}
+
+.mp-books-of-the-bible-list li, .mp-preachers-list li, .mp-series-list li, .mp-topics-list li{
+	float:left;
+	margin:0px 5px 5px 0px;	
+}
+
+.mp-sermons-sermon-info{
+	display:inline-block;
+	margin:10px 0px 10px 0px;
+}
+
+/*Edit post button */
+.post-edit-link{
+	float: none;
+	clear: both;
+	display: block;
+}
+
+/*Single Featured Image*/
+.single-featured-image{
+	display:inline-block;
+	float:left;
+	margin:0px 10px 5px 0px;	
+}
+
+/* Jplayer */
+.mp-jplayer-container{
+	margin-bottom:10px;
+}
+
+/* MP People Links */
+.mp-people-links{
+	list-style:none;
+	margin:0px;
+	padding:0px;	
+}
+.mp-people-links li{
+	float:left;
+	width:auto;
+	margin:0px;
+}
+.mp-people-links li a{
+	font-size:0px;	
+}
+
+.mp-people-links li a:before{
+	font-size:50px;	
 }
