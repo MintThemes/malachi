@@ -1374,7 +1374,7 @@ iframe{
 }
 
 /*Single Featured Image*/
-.single-featured-image{
+.single-featured-image, .mp-sermons-featured-image{
 	display:inline-block;
 	float:left;
 	margin:0px 10px 5px 0px;	
@@ -1401,5 +1401,18 @@ iframe{
 }
 
 .mp-people-links li a:before{
+	font-size:50px;	
+}
+/*MP Links*/
+.mp-links{
+	margin:0px;
+	padding:0px;
+	font-size:0px;
+	list-style:none;	
+}
+.mp-links li {
+	float:left;	
+}
+.mp-links li a:before{
 	font-size:50px;	
 }

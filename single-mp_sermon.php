@@ -31,7 +31,7 @@ get_header(); ?>
                         
                         <div class="text">
                         
-							<?php echo mp_sermons_the_sermon($post->ID); ?>
+							<?php echo mp_sermon($post->ID); ?>
                                                         
                             <?php the_content(); ?>
                             

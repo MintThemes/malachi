@@ -29,7 +29,7 @@ get_header(); ?>
                                                                   
                             <?php the_content(); ?>
     						
-                            <?php mp_people_links_list( get_the_id() ); ?>   
+                            <?php echo mp_people_links_list(); ?>   
                              
                             <?php
                             wp_link_pages( array( 'before' => '' . __( 'Pages:', 'malachi' ), 'after' => '' ) ); 

@@ -24,6 +24,12 @@ if ( ! function_exists( 'malachi_setup' ) ):
 		// Add default posts and comments RSS feed links to head
 		add_theme_support( 'automatic-feed-links' );
 		
+		//Add Theme Support for the mp_people plugin
+		add_theme_support( 'mp_people' );
+		
+		//Add Theme Support for the mp_people plugin
+		add_theme_support( 'mp_sermons' );
+		
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary' => __( 'Primary Navigation', 'mt_malachi' ),

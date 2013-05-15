@@ -58,7 +58,7 @@
 		margin:0px 0px 0px 3px;
 		padding:0px;
 	}
-	#header .menu .menu-item{
+	#header .menu > .menu-item{
 		margin-bottom:9px;	
 	}
 
