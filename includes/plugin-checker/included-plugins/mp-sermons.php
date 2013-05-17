@@ -12,7 +12,7 @@
 			'plugin_subdirectory' => 'mp-sermons/', 
 			'plugin_filename' => 'mp-sermons.php',
 			'plugin_required' => false,
-			'plugin_download_link' => 'http://moveplugins.com/repo/mp-sermons/?download=true'
+			'plugin_download_link' => 'http://repo.moveplugins.com/repo/mp-sermons/?downloadfile=true'
 		);
 		$mp_sermons_plugin_check = new MP_CORE_Plugin_Checker($args);
 	}

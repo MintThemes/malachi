@@ -11,7 +11,7 @@
 			'plugin_slug' => 'mp-people', 
 			'plugin_filename' => 'mp-people.php',
 			'plugin_required' => false,
-			'plugin_download_link' => 'http://moveplugins.com/repo/mp-people/?download=true'
+			'plugin_download_link' => 'http://repo.moveplugins.com/repo/mp-people/?downloadfile=true'
 		);
 		$mp_people_plugin_check = new MP_CORE_Plugin_Checker($args);
 	}

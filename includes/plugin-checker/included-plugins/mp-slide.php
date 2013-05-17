@@ -12,7 +12,7 @@
 			'plugin_subdirectory' => 'mp-slide/', 
 			'plugin_filename' => 'mp-slide.php',
 			'plugin_required' => false,
-			'plugin_download_link' => 'http://moveplugins.com/repo/mp-slide/?download=true'
+			'plugin_download_link' => 'http://repo.moveplugins.com/repo/mp-slide/?downloadfile=true'
 		);
 		$mp_slide_plugin_check = new MP_CORE_Plugin_Checker($args);
 	}
