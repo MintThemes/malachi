@@ -75,7 +75,7 @@ function mt_malachi_customizer(){
 				),
 				'mt_malachi_top_bar_map_url' => array(
 					'label'      => __( 'Map URL', 'mp_core' ),
-					'type'       => 'text',
+					'type'       => 'textbox',
 					'default'    => '',
 					'priority'   => 2,
 					'element'    => '#top .map a',
@@ -93,7 +93,7 @@ function mt_malachi_customizer(){
 				),
 				'mt_malachi_top_bar_times' => array(
 					'label'      => __( 'Meeting Times', 'mp_core' ),
-					'type'       => 'text',
+					'type'       => 'textbox',
 					'default'    => '',
 					'priority'   => 5,
 					'element'    => 'body #top .time',
@@ -111,7 +111,7 @@ function mt_malachi_customizer(){
 				),				
 				'mt_malachi_top_bar_phone' => array(
 					'label'      => __( 'Phone Number', 'mp_core' ),
-					'type'       => 'text',
+					'type'       => 'textbox',
 					'default'    => '',
 					'priority'   => 8,
 					'element'    => '.mt-malachi-icon-phone',
