@@ -2,7 +2,7 @@
 Theme Name: Malachi Theme
 Theme URI: http://mintthemes.com
 Description: A video-based theme built for churches
-Version: beta1.0.0.0
+Version: beta1.0.2.4
 Author: Mint Themes
 Author URI: http://mintthemes.com
 License: GNU General Public License v2 or later
@@ -443,7 +443,7 @@ select:focus{outline:none;}
 /*Tri Slot */
 .tri-slot{width:100%;}
 .tri-slot .col{
-	width:33.33%;
+	width:33.32%;
 	height:171px;
 	float:left;
 	border-right: 1px solid #dbdfe2;

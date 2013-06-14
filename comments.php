@@ -18,5 +18,3 @@ if ( function_exists ( 'mp_core_comments_template' ) ) {
 }else{
 	wp_list_comments(); comment_form(); paginate_comments_links();
 }
-
-?>

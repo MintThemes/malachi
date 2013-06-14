@@ -16,6 +16,14 @@ function mt_malachi_logo_height(){
 add_filter( 'mp_core_logo_height', 'mt_malachi_logo_height'); 
 
 /**
+ * Set size for comment avatar
+ */
+function mt_malachi_avatar_size(){
+	return 40;
+}
+add_filter( 'mp_core_avatar_size', 'mt_malachi_avatar_size'); 
+
+/**
  * Remove labels from Name Email and Website for comment form
  */
 function mt_malachi_comment_form_args($args, $commenter, $req, $aria_req){
@@ -38,9 +46,3 @@ function mt_malachi_comment_form_args($args, $commenter, $req, $aria_req){
 	return $args;
 }
 add_filter( 'mp_core_comment_form_args', 'mt_malachi_comment_form_args', 10, 4); 
-
-/**
- * Make sure the home page is created, has page template, and is set to be front page
- */
-add_action("after_switch_theme", "mp_core_make_home_page", 10, 2);
-register_activation_hook( ABSPATH . 'wp-content/plugins/mp-core/mp-core.php', "mp_core_make_home_page" );

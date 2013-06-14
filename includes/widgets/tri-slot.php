@@ -136,32 +136,33 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
 							)
 						)
                     );
-					
-										
-					$slot_1_posts = get_posts($args);
-					
-					
+
 				}
 				//If this is a custom post type
 				else{
 					$args = array( 
 						'post_type' => $instance['slot_1_source'],
-						'showposts' => 3,
-						'order' => 'ASC'
+						'posts_per_page' => 3,
 					);
-					
-					 $slot_1_posts = get_posts($args);
 				}
+				
+				// Slot 1 Query
+				global $slot_1_posts;
+				$slot_1_posts = new WP_Query( $args );
            		
-				//print_r ( $slot_1_posts );
-                echo '<ul>';
+				// The Loop
+				if ( $slot_1_posts->have_posts() ) {
+					 
+					echo '<ul>';
                 
-                    foreach($slot_1_posts as $post) : 
-                        echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-                    endforeach;
-                
-                echo '</ul>';
-            
+						while ( $slot_1_posts->have_posts() ) {
+							$slot_1_posts->the_post();
+							 echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+						}
+					
+					echo '</ul>';
+				} 
+				
                 ?>
             
             </div>
@@ -177,8 +178,8 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
                 <?php } 
                 
                 global $post;
-            
-                //If this is a taxonomy term (they are stored as numbers)
+            	
+				//If this is a taxonomy term (they are stored as numbers)
 				if ( strpos( $instance['slot_2_source'], '*' ) ){
 					
 					$termid_taxname = explode( '*', $instance['slot_2_source'] );
@@ -196,31 +197,32 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
 							)
 						)
                     );
-					
-										
-					$slot_2_posts = get_posts($args);
-					
-					
+
 				}
 				//If this is a custom post type
 				else{
 					$args = array( 
 						'post_type' => $instance['slot_2_source'],
-						'showposts' => 3,
-						'order' => 'ASC'
+						'posts_per_page' => 3,
 					);
-					
-					 $slot_2_posts = get_posts($args);
 				}
+				
+				// Slot 2 Query
+				$slot_2_posts = new WP_Query( $args );
+           		
+				// The Loop
+				if ( $slot_2_posts->have_posts() ) {
+					 
+					echo '<ul>';
                 
-                echo '<ul>';
-                
-                    foreach($slot_2_posts as $post) : 
-                        echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-                    endforeach;
-                
-                echo '</ul>';
-            
+						while ( $slot_2_posts->have_posts() ) {
+							$slot_2_posts->the_post();
+							 echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+						}
+					
+					echo '</ul>';
+				} 
+				            
                 ?>
             
             </div>
@@ -228,7 +230,7 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
         
         	<div class="col col3">
             
-                <?php if ( !empty( $instance['slot_3_title'] )) { ?>
+               <?php if ( !empty( $instance['slot_3_title'] )) { ?>
                     <div class="tri-slot-title">
             
                         <h3><?php echo $instance['slot_3_title'] ?></h3>
@@ -237,8 +239,8 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
                 <?php } 
                 
                 global $post;
-            
-                //If this is a taxonomy term (they are stored as numbers)
+            	
+				//If this is a taxonomy term (they are stored as numbers)
 				if ( strpos( $instance['slot_3_source'], '*' ) ){
 					
 					$termid_taxname = explode( '*', $instance['slot_3_source'] );
@@ -256,31 +258,32 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
 							)
 						)
                     );
-					
-										
-					$slot_3_posts = get_posts($args);
-					
-					
+
 				}
 				//If this is a custom post type
 				else{
 					$args = array( 
 						'post_type' => $instance['slot_3_source'],
-						'showposts' => 3,
-						'order' => 'ASC'
+						'posts_per_page' => 3,
 					);
-					
-					 $slot_3_posts = get_posts($args);
 				}
+				
+				// Slot 3 Query
+				$slot_3_posts = new WP_Query( $args );
+           		
+				// The Loop
+				if ( $slot_3_posts->have_posts() ) {
+					 
+					echo '<ul>';
                 
-                echo '<ul>';
-                
-                    foreach($slot_3_posts as $post) : 
-                        echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-                    endforeach;
-                
-                echo '</ul>';
-            
+						while ( $slot_3_posts->have_posts() ) {
+							$slot_3_posts->the_post();
+							 echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+						}
+					
+					echo '</ul>';
+				} 
+				            
                 ?>
             
             </div>
