@@ -17,5 +17,5 @@
 		$mp_sermons_plugin_check = new MP_CORE_Plugin_Checker($args);
 	}
  }
-add_action( 'init', 'mp_sermons_plugin_check' );
+add_action( '_admin_menu', 'mp_sermons_plugin_check' );
 
