@@ -23,16 +23,8 @@ get_header(); ?>
             	<div class="content-inner">
              
                     <div class="title">
-                        <h2><?php function_exists ( 'mp_core_archive_page_title' ) ? mp_core_archive_page_title() : _e( 'Archives', 'mt_malachi' ); ?></h2>
-                         
-                        <div class="podcast-holder">
-                        
-                        	<a href="<?php echo mp_sermons_podcast_url('itpc://', 'mp_sermon'); ?>"><?php _e('Subscribe to Podcast', 'mt_malachi'); ?></a>
-                        
-                        </div>
-                        
+                         <h2><?php function_exists ( 'mp_core_archive_page_title' ) ? mp_core_archive_page_title() : _e( 'Archives', 'mt_malachi' ); ?></h2>
                     </div>
-                    
 				
                 	<?php function_exists( 'mp_isotopes' ) ? mp_isotopes() : NULL; ?>
                                             
@@ -51,7 +43,7 @@ get_header(); ?>
                                                             
                                     <div class="text">
                                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                        <em><?php echo get_the_date('F j, Y'); ?>  <a href="<?php the_permalink(); ?>"><?php comments_number( '', '// 1 Comment', '// % Comments' ); ?></a></em>
+                                        <em><?php echo get_the_date('F j, Y g:i A'); ?>  <a href="<?php the_permalink(); ?>"><?php comments_number( '', '// 1 Comment', '// % Comments' ); ?></a></em>
                                         <?php the_excerpt(); ?>
                                     </div>
                                 </li>
