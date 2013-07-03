@@ -67,7 +67,7 @@ function mt_malachi_customizer(){
 				'mt_malachi_top_bar_bg_color' => array(
 					'label'      => __( 'Background Color', 'mp_core' ),
 					'type'       => 'color',
-					'default'    => '000000',
+					'default'    => '',
 					'priority'   => 101,
 					'element'    => '#top',
 					'jquery_function_name' => 'css',
