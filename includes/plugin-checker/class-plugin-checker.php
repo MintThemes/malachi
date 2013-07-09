@@ -22,7 +22,7 @@ if ( !class_exists( 'MP_CORE_Plugin_Checker' ) ){
 			
 			//Make sure we are not on the "plugin install" page - where this message isn't necessary
 			$page = isset($_GET['page']) ?$_GET['page'] : NULL;
-			if ($page != 'mp_core_update_plugin_page_' . $this->_args['plugin_slug']){
+			if ( stripos( $page, 'mp_core_update_plugin_page_' ) === false ){
 				//Check for plugin in question
 				add_action( 'admin_notices', array( $this, 'mp_core_plugin_check_notice') );
 			}
@@ -274,7 +274,7 @@ if ( !class_exists( 'MP_CORE_Plugin_Checker' ) ){
 			
 			//If we are unable to find the file, let the user know
 			if ( ! $saved_file ) {
-				die('<p>' . __('Unable to find file! Please contact the author of this plugin.', 'mp_core') . '</p>');
+				die('<p>' . __('Unable to download file! Your webhost may be blocking cross-server connections. You will have to manually download and install this plugin. <br /><br />It looks like this plugin may be available for download here: <a href="' . $this->_args['plugin_download_link'] . '" target="_blank" >' . $this->_args['plugin_download_link'] . '</a><br /><br /> Download it, and then go to "Appearace > Plugins > Add New > Upload" to upload the plugin and activate it. <br /><br /> If the plugin link above does not download the plugin for you, contact the author of the plugin for a download link.', 'mp_core') . '</p>');
 			}
 						
 			//Place the temp zipped file in the plugins directory
