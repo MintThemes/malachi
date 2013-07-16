@@ -70,11 +70,16 @@ add_action( 'init', 'mt_malachi_textdomain', 1 );
  */
 if (!function_exists('mp_core_textdomain')){
 	
-	
 	/**
 	 * Include Plugin Checker
 	 */
 	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/class-plugin-checker.php' );
+	
+	/**
+	 * Include Plugin Installer
+	 */
+	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/class-plugin-installer.php' );
+	
 	/**
 	 * Check if wp_core in installed
 	 */

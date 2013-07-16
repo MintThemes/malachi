@@ -7,6 +7,8 @@ Contact Info: Visit mintthemes.com
 ----------------------------------------------------------------------------------------------------------
 
 VERSION HISTORY
+= 1.0.3.0 = July 16, 2013
+-Changed plugin checker/installer to use curl instead of get_contents
 
 = 1.0.2.9 = July 11, 2013
 -Changed size of mp-links icons as the fonts were updated
