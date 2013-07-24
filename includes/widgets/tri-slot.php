@@ -30,7 +30,7 @@ class MT_MALACHI_Widget extends MP_CORE_Widget {
 				'field_description' 	=> NULL,
 				'field_type' 	=> 'select',
 				//'field_select_values' =>  mp_core_get_all_post_types() + mp_core_get_all_tax_terms() ,
-				'field_select_values' =>  array_merge(mp_core_get_all_post_types(), mp_core_get_all_tax_terms()),
+				'field_select_values' =>  array_merge(mp_core_get_all_post_types(), mp_core_get_all_tax_terms( $exclude_slugs = array( 'nav_menu' ))),
 			),
 			"field3" => array(
 				'field_id' 			=> 'slot_2_title',

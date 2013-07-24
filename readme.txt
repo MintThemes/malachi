@@ -7,6 +7,9 @@ Contact Info: Visit mintthemes.com
 ----------------------------------------------------------------------------------------------------------
 
 VERSION HISTORY
+= 1.0.3.1 = July 16, 2013
+Changes Tri-Slot widget to not show menus
+
 = 1.0.3.0 = July 16, 2013
 -Changed plugin checker/installer to use curl instead of get_contents
 
