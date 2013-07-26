@@ -7,6 +7,9 @@ Contact Info: Visit mintthemes.com
 ----------------------------------------------------------------------------------------------------------
 
 VERSION HISTORY
+= 1.0.3.2 = July 16, 2013
+Updated plugin checker which now auto-activates
+
 = 1.0.3.1 = July 16, 2013
 Changes Tri-Slot widget to not show menus
 
