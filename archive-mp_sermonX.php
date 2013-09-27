@@ -24,7 +24,7 @@ get_header(); ?>
                 <div class="content-inner">
             
 					 <div class="title sermon-archives-title">
-                        <h2><?php function_exists ( 'mp_core_archive_page_title' ) ? mp_core_archive_page_title() : _e( 'Archives', 'mt_malachi' ); ?></h2>
+                        <h2><?php function_exists ( 'mp_core_page_title' ) ? mp_core_page_title() : _e( 'Archives', 'mt_malachi' ); ?></h2>
                         
                         <div class="podcast-holder">
                

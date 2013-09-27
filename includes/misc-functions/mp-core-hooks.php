@@ -1,19 +1,4 @@
 <?php
-/**
- * Set default width for the logo
- */
-function mt_malachi_logo_width(){
-	return 300;
-}
-add_filter( 'mp_core_logo_width', 'mt_malachi_logo_width'); 
-
-/**
- * Set default width for the logo
- */
-function mt_malachi_logo_height(){
-	return 75;
-}
-add_filter( 'mp_core_logo_height', 'mt_malachi_logo_height'); 
 
 /**
  * Set size for comment avatar

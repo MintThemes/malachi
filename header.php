@@ -51,7 +51,7 @@
 	</div>
 </div> 
 
-<div class="container">
+<div id="#page" class="site container">
 	
     <div class="container-top">
 
@@ -61,9 +61,11 @@
     
                 <div class="holder">
     
-                <strong class="logo"><?php function_exists( 'mp_core_logo_image' ) ? mp_core_logo_image() : ''; ?></strong>
-        
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => 'mp_core_link_to_menu_editor' ) ); ?>
+                <strong class="logo"><?php function_exists( 'mp_core_logo_image' ) ? mp_core_logo_image( 300, 75 ) : ''; ?></strong>
+        		
+                <nav id="site-navigation" class="navigation-main" role="navigation">
+                	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => 'mp_core_link_to_menu_editor' ) ); ?>
+                </nav>
        
                 </div>
     
