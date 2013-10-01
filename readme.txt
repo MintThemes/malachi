@@ -7,6 +7,9 @@ Contact Info: Visit mintthemes.com
 ----------------------------------------------------------------------------------------------------------
 
 VERSION HISTORY
+= 1.0.3.3 = October 1, 2013
+Plugin Checker Update
+
 = 1.0.3.2 = July 16, 2013
 Updated plugin checker which now auto-activates
 
