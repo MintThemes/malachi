@@ -66,9 +66,9 @@ add_action( 'init', 'mt_malachi_textdomain', 1 );
 */
 
 /**
- * If mp_core isn't active, stop and install it now
+ * If required plugins aren't active, stop and install it now
  */
-if (!function_exists('mp_core_textdomain')){
+if ( !function_exists('mp_core_textdomain') || !function_exists('mp_slide_textdomain') || !function_exists('mp_sermons_textdomain') || !function_exists('mp_people_textdomain') ){
 	
 	/**
 	 * Include Plugin Checker
@@ -85,22 +85,6 @@ if (!function_exists('mp_core_textdomain')){
 	 */
 	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/included-plugins/mp-core-check.php' );
 	
-}
-/**
- * Otherwise, if mp_core is active, carry out the plugin's functions
- */
-else{
-	
-	/**
-	 * Check Malachi Theme for updates
-	 */
-	require( MT_MALACHI_THEME_DIR . '/includes/updater/mt-malachi-update.php' );
-	
-	/**
-	 * Include all the theme specific scripts from the mp_core
-	 */
-	add_action( 'after_setup_theme', 'mp_core_theme_specific_scripts' );
-	
 	/**
 	 * Check if mp_slide is installed
 	 */
@@ -115,6 +99,22 @@ else{
 	 * Check if mp_people is installed
 	 */
 	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/included-plugins/mp-people.php' );
+	
+}
+/**
+ * Otherwise, if required plugins are active, carry out the plugin's functions
+ */
+else{
+	
+	/**
+	 * Check Malachi Theme for updates
+	 */
+	require( MT_MALACHI_THEME_DIR . '/includes/updater/mt-malachi-update.php' );
+	
+	/**
+	 * Include all the theme specific scripts from the mp_core
+	 */
+	add_action( 'after_setup_theme', 'mp_core_theme_specific_scripts' );
 
 	/**
 	 * Initial Theme Setup

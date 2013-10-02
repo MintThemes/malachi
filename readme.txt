@@ -7,6 +7,9 @@ Contact Info: Visit mintthemes.com
 ----------------------------------------------------------------------------------------------------------
 
 VERSION HISTORY
+= 1.0.3.5 = October 2, 2013
+Make all plugins install at once in plugin checker in functions.php
+
 = 1.0.3.3 = October 1, 2013
 Plugin Checker Update
 
