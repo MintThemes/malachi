@@ -2,7 +2,7 @@
 Theme Name: Malachi Theme
 Theme URI: http://mintthemes.com
 Description: A video-based theme built for churches
-Version: beta1.0.3.5
+Version: beta1.0.3.6
 Author: Mint Themes
 Author URI: http://mintthemes.com
 License: GNU General Public License v2 or later
@@ -1102,6 +1102,27 @@ textarea{
 	padding: 10px 0 10px 0px;
 }
 
+/* MP Links
+----------------------------------------------- */
+
+/*visually hidden*/
+.mp-links-title{
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.mp-links li {
+	float:left;	
+}
+.mp-links li a div:before{
+	font-size:50px;
+}
+
 /*MP Links*/
 .social-holder{
 	background:url(css/images/bg-footer.gif) repeat-x;
@@ -1117,10 +1138,6 @@ textarea{
 	position:relative;
 	left:50%;
 	font-size:0px;
-}
-.social-holder ul li a:before{
-	margin:0;
-	font-size:50px;
 }
 
 /*MP Links in sidebar*/

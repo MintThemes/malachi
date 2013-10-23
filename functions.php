@@ -68,7 +68,7 @@ add_action( 'init', 'mt_malachi_textdomain', 1 );
 /**
  * If required plugins aren't active, stop and install it now
  */
-if ( !function_exists('mp_core_textdomain') || !function_exists('mp_slide_textdomain') || !function_exists('mp_sermons_textdomain') || !function_exists('mp_people_textdomain') ){
+if ( !function_exists('mp_core_textdomain') ||  !function_exists('mp_events_textdomain') || !function_exists('mp_slide_textdomain') || !function_exists('mp_sermons_textdomain') || !function_exists('mp_people_textdomain') ){
 	
 	/**
 	 * Include Plugin Checker
@@ -84,6 +84,11 @@ if ( !function_exists('mp_core_textdomain') || !function_exists('mp_slide_textdo
 	 * Check if wp_core in installed
 	 */
 	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/included-plugins/mp-core-check.php' );
+	
+	/**
+	 * Check if mp_events is installed
+	 */
+	require( MT_MALACHI_THEME_DIR . '/includes/plugin-checker/included-plugins/mp-events.php' );
 	
 	/**
 	 * Check if mp_slide is installed
