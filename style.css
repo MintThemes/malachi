@@ -2,7 +2,7 @@
 Theme Name: Malachi Theme
 Theme URI: http://mintthemes.com
 Description: A video-based theme built for churches
-Version: beta1.0.3.6
+Version: beta1.0.3.7
 Author: Mint Themes
 Author URI: http://mintthemes.com
 License: GNU General Public License v2 or later
@@ -13,7 +13,7 @@ Text Domain: mt_malachi
 */
 
 body{
-	margin:0;
+	margin:0 auto;
 	color:#3d3d3d;
 	font-size:13px; font-family: 'Droid Sans', sans-serif; font-weight: 400; 
 	background:url(css/images/bg-body.gif);
