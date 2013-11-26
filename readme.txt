@@ -7,6 +7,10 @@ Contact Info: Visit mintthemes.com
 ----------------------------------------------------------------------------------------------------------
 
 VERSION HISTORY
+= 1.0.3.8 = November 25, 2013
+Changed update theme to be called on admin_init instead of admin. 
+Add min-height:260px to media-list:li so titles can be two lines without creating float issue
+
 = 1.0.3.7 = October 29, 2013
 Put fonts in theme for icons
 

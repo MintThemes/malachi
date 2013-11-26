@@ -15,4 +15,4 @@
 		$mt_malachi_theme_updater = new MP_CORE_Theme_Updater($args);
 	}
  }
-add_action( 'init', 'mt_malachi_software_check' );
+add_action( 'admin_init', 'mt_malachi_software_check' );
