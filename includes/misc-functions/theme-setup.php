@@ -41,3 +41,11 @@ endif;
 
 /** Tell WordPress to run malachi_setup() when the 'after_setup_theme' hook is run. */
 add_action( 'after_setup_theme', 'malachi_setup' );
+
+/**
+ * Limit the excerpt to 84 characters
+ */
+function custom_excerpt_length( $length ) {
+	return 84;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
