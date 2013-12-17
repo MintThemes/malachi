@@ -7,7 +7,12 @@ Contact Info: Visit mintthemes.com
 ----------------------------------------------------------------------------------------------------------
 
 VERSION HISTORY
-= 1.0.3.9 = November 25, 2013
+
+= 1.0.4.0 = December 17, 2013
+Added the_excerpt limit to be 84 characters
+Added min-height on archive list items to be min of 268
+
+= 1.0.3.9 = December 12, 2013
 Added the_excerpt limit to be 84 characters
 
 = 1.0.3.8 = November 25, 2013
