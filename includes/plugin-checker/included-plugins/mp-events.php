@@ -25,7 +25,7 @@ if (!function_exists('mp_events_plugin_check')){
 		
 		$add_plugins = array(
 			array(
-				'plugin_name' => 'MP Slide',
+				'plugin_name' => 'MP Events',
 				'plugin_message' => __('You require the MP Slide plugin. Install it here.', 'mp_knapstack'),
 				'plugin_filename' => 'mp-events.php',
 				'plugin_download_link' => 'http://moveplugins.com/repo/mp-events/?downloadfile=true',

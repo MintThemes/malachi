@@ -8,6 +8,9 @@ Contact Info: Visit mintthemes.com
 
 VERSION HISTORY
 
+= 1.0.4.2 = February 25, 2014
+Updated MP Events plugin check - was conflicting with MP Slide
+
 = 1.0.4.1 = February 25, 2014
 Updated plugin checker to latest version
 
