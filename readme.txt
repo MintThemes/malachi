@@ -8,6 +8,9 @@ Contact Info: Visit mintthemes.com
 
 VERSION HISTORY
 
+= 1.0.4.1 = February 25, 2014
+Updated plugin checker to latest version
+
 = 1.0.4.0 = December 17, 2013
 Added the_excerpt limit to be 84 characters
 Added min-height on archive list items to be min of 268
