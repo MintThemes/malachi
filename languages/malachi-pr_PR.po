@@ -298,7 +298,7 @@ msgid "View all Plugins"
 msgstr ""
 
 #: includes/plugin-checker/included-plugins/mp-core-check.php:10
-msgid "You require the Move Plugins Core plugin. Install it here."
+msgid "You require the Mint Plugins Core plugin. Install it here."
 msgstr ""
 
 #: includes/plugin-checker/included-plugins/mp-links.php:9
@@ -310,7 +310,7 @@ msgid "To add social links, you'll need the links plugin. Install it here."
 msgstr ""
 
 #: includes/plugin-checker/included-plugins/mp-people.php:9
-msgid "Move Plugins People"
+msgid "Mint Plugins People"
 msgstr ""
 
 #: includes/plugin-checker/included-plugins/mp-people.php:10
